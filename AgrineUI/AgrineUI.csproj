@@ -46,6 +46,7 @@
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="Dialogs\" />
+    <Folder Include="Forms\" />
     <Folder Include="Messages\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
