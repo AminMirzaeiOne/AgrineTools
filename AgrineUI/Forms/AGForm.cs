@@ -18,11 +18,27 @@ namespace AgrineUI.Forms
             InitializeComponent();
         }
 
+        private bool darkMode = false;
+
         [Category("Theme")]
-        public DevComponents.DotNetBar.eStyle Style
+        public bool DarkMode
         {
-            get { return this.styleManager1.ManagerStyle; }
-            set { this.styleManager1.ManagerStyle = value; }
+            get { return this.darkMode; }
+            set 
+            { 
+                this.darkMode = value;
+                if (value)
+                {
+                    this.styleManager1.ManagerStyle = eStyle.VisualStudio2012Dark;
+                    this.BackColor = Color.FromArgb(20, 20, 20);
+                }
+                else
+                {
+                    this.styleManager1.ManagerStyle = eStyle.VisualStudio2012Light;
+                    this.BackColor = Color.White;
+                }
+            }
         }
+
     }
 }
