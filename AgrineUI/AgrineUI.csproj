@@ -60,7 +60,9 @@
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="Dialogs\" />
+    <Folder Include="Icons\" />
     <Folder Include="Messages\" />
+    <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\AGForm.resx">
