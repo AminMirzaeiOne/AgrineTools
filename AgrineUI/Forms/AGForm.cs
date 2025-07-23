@@ -17,6 +17,7 @@ namespace AgrineUI.Forms
         {
             InitializeComponent();
             this.ThemeCheck();
+            this.AutoScaleMode = AutoScaleMode.Inherit;
         }
 
         private bool darkMode = false;

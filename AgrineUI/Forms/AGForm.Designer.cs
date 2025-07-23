@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.styleManager1 = new DevComponents.DotNetBar.StyleManager();
+            this.components = new System.ComponentModel.Container();
+            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.SuspendLayout();
             // 
             // styleManager1
@@ -46,7 +47,8 @@
             this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "AGForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "پنجره";
+            this.Text = "AGForm";
+            this.TitleText = "AGForm";
             this.ResumeLayout(false);
 
         }
