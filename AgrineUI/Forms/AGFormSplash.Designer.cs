@@ -32,12 +32,17 @@
             // 
             // AGFormSplash
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 542);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.ClientSize = new System.Drawing.Size(907, 533);
+            this.ControlBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AGFormSplash";
-            this.Text = "AGFormSplash";
+            this.ShowIcon = false;
+            this.Text = "";
+            this.TitleText = "";
             this.ResumeLayout(false);
 
         }

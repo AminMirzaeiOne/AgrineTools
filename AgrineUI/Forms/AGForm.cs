@@ -21,7 +21,7 @@ namespace AgrineUI.Forms
         }
 
         private bool darkMode = false;
-        private System.Drawing.Color palette = Color.CornflowerBlue;
+        private System.Drawing.Color palette = Color.Tomato;
 
         [Category("Theme")]
         public bool DarkMode

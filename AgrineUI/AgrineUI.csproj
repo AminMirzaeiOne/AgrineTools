@@ -69,6 +69,7 @@
     <Folder Include="Fonts\" />
     <Folder Include="Icons\" />
     <Folder Include="Messages\" />
+    <Folder Include="Shapes\" />
     <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>

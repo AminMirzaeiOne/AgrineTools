@@ -51,7 +51,6 @@
             this.Controls.Add(this.buttonX1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Palette = System.Drawing.Color.SlateBlue;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
