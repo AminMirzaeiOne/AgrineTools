@@ -55,6 +55,12 @@
     <Compile Include="Forms\AGForm.Designer.cs">
       <DependentUpon>AGForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AGFormSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AGFormSplash.Designer.cs">
+      <DependentUpon>AGFormSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +74,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\AGForm.resx">
       <DependentUpon>AGForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AGFormSplash.resx">
+      <DependentUpon>AGFormSplash.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
