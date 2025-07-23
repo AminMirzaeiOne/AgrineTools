@@ -10,12 +10,19 @@ using System.Windows.Forms;
 
 namespace Demo
 {
-    public partial class Form1 : Form
+    public partial class Form1 : AgrineUI.Forms.AGForm
     {
         public Form1()
         {
             InitializeComponent();
-            this.BackColor = Color.White;
+        }
+
+        private void buttonX1_Click(object sender, EventArgs e)
+        {
+            if (this.DarkMode)
+                this.DarkMode = false;
+            else
+                this.DarkMode = true;
         }
     }
 }

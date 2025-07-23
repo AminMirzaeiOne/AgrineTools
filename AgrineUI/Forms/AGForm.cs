@@ -16,6 +16,7 @@ namespace AgrineUI.Forms
         public AGForm()
         {
             InitializeComponent();
+            this.ThemeCheck();
         }
 
         private bool darkMode = false;
@@ -28,18 +29,7 @@ namespace AgrineUI.Forms
             set 
             { 
                 this.darkMode = value;
-                if (value)
-                {
-                    this.styleManager1.ManagerStyle = eStyle.VisualStudio2012Dark;
-                    this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(this.styleManager1.MetroColorParameters.CanvasColor, this.palette);
-                    this.BackColor = Color.FromArgb(25, 25, 25);
-                }
-                else
-                {
-                    this.styleManager1.ManagerStyle = eStyle.VisualStudio2012Light;
-                    this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(this.styleManager1.MetroColorParameters.CanvasColor, this.palette);
-                    this.BackColor = Color.White;
-                }
+                this.ThemeCheck();
             }
         }
 
@@ -51,6 +41,23 @@ namespace AgrineUI.Forms
             {
                 this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(this.styleManager1.MetroColorParameters.CanvasColor, value);
                 this.palette = value;
+                this.ThemeCheck();
+            }
+        }
+
+        private void ThemeCheck()
+        {
+            if (this.DarkMode)
+            {
+                this.styleManager1.ManagerStyle = eStyle.VisualStudio2012Dark;
+                this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(Color.FromArgb(45, 45, 48), this.palette);
+                this.BackColor = Color.FromArgb(25, 25, 25);
+            }
+            else
+            {
+                this.styleManager1.ManagerStyle = eStyle.VisualStudio2012Light;
+                this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(Color.FromArgb(239, 239, 242), this.palette);
+                this.BackColor = Color.White;
             }
         }
 
