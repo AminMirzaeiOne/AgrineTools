@@ -40,5 +40,15 @@ namespace AgrineUI.Forms
             }
         }
 
+        [Category("Theme")]
+        public System.Drawing.Color Palette
+        {
+            get { return this.styleManager1.MetroColorParameters.BaseColor; }
+            set
+            {
+                this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(this.styleManager1.MetroColorParameters.CanvasColor, value);
+            }
+        }
+
     }
 }

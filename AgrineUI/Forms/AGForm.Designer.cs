@@ -30,18 +30,30 @@
         {
             this.components = new System.ComponentModel.Container();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // styleManager1
             // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2010Black;
-            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light;
+            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242))))), System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204))))));
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(440, 143);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(179, 77);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 0;
+            this.buttonX1.Text = "buttonX1";
             // 
             // AGForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 505);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.ClientSize = new System.Drawing.Size(853, 526);
+            this.Controls.Add(this.buttonX1);
             this.DoubleBuffered = true;
             this.Name = "AGForm";
             this.Text = "AGForm";
@@ -52,5 +64,6 @@
         #endregion
 
         private DevComponents.DotNetBar.StyleManager styleManager1;
+        private DevComponents.DotNetBar.ButtonX buttonX1;
     }
 }
