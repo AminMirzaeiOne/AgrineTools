@@ -1,6 +1,6 @@
 ﻿namespace AgrineUI.Shapes
 {
-    partial class AgrineLogo
+    partial class AGCircle
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,11 +30,11 @@
         {
             this.SuspendLayout();
             // 
-            // AgrineLogo
+            // AGCircle
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.Name = "AgrineLogo";
-            this.Size = new System.Drawing.Size(325, 301);
+            this.Name = "AGCircle";
+            this.Size = new System.Drawing.Size(399, 242);
             this.ResumeLayout(false);
 
         }
