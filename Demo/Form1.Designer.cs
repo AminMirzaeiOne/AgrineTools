@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
+            this.agButton1 = new AgrineUI.Controls.AGButton();
             this.SuspendLayout();
             // 
             // buttonX1
@@ -39,15 +40,28 @@
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Size = new System.Drawing.Size(184, 85);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.Symbol = "";
+            this.buttonX1.SymbolSize = 15F;
             this.buttonX1.TabIndex = 0;
-            this.buttonX1.Text = "buttonX1";
             this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
+            // 
+            // agButton1
+            // 
+            this.agButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.agButton1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.agButton1.Location = new System.Drawing.Point(344, 46);
+            this.agButton1.Name = "agButton1";
+            this.agButton1.Size = new System.Drawing.Size(270, 104);
+            this.agButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.agButton1.TabIndex = 1;
+            this.agButton1.Text = "agButton1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 483);
+            this.Controls.Add(this.agButton1);
             this.Controls.Add(this.buttonX1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
@@ -59,6 +73,7 @@
         #endregion
 
         private DevComponents.DotNetBar.ButtonX buttonX1;
+        private AgrineUI.Controls.AGButton agButton1;
     }
 }
 
