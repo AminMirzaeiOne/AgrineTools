@@ -80,6 +80,12 @@
     <Compile Include="Shapes\AgrineLogo.Designer.cs">
       <DependentUpon>AgrineLogo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shapes\AGTriangle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shapes\AGTriangle.Designer.cs">
+      <DependentUpon>AGTriangle.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Shapes\AgrineLogo.resx">
       <DependentUpon>AgrineLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shapes\AGTriangle.resx">
+      <DependentUpon>AGTriangle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
