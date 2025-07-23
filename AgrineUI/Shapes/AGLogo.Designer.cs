@@ -1,6 +1,6 @@
 ﻿namespace AgrineUI.Shapes
 {
-    partial class AgrineLogo
+    partial class AGLogo
     {
         /// <summary> 
         /// Required designer variable.

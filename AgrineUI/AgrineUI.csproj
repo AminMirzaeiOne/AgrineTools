@@ -74,11 +74,11 @@
     <Compile Include="Shapes\AGRectangle.Designer.cs">
       <DependentUpon>AGRectangle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shapes\AgrineLogo.cs">
+    <Compile Include="Shapes\AGLogo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Shapes\AgrineLogo.Designer.cs">
-      <DependentUpon>AgrineLogo.cs</DependentUpon>
+    <Compile Include="Shapes\AGLogo.Designer.cs">
+      <DependentUpon>AGLogo.cs</DependentUpon>
     </Compile>
     <Compile Include="Shapes\AGTriangle.cs">
       <SubType>UserControl</SubType>
@@ -108,8 +108,8 @@
     <EmbeddedResource Include="Shapes\AGRectangle.resx">
       <DependentUpon>AGRectangle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shapes\AgrineLogo.resx">
-      <DependentUpon>AgrineLogo.cs</DependentUpon>
+    <EmbeddedResource Include="Shapes\AGLogo.resx">
+      <DependentUpon>AGLogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shapes\AGTriangle.resx">
       <DependentUpon>AGTriangle.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AgrineUI.Shapes
 {
-    public partial class AgrineLogo : UserControl
+    public partial class AGLogo : UserControl
     {
-        public AgrineLogo()
+        public AGLogo()
         {
             InitializeComponent();
         }
