@@ -15,6 +15,7 @@ namespace Demo
         public Form1()
         {
             InitializeComponent();
+            this.BackColor = Color.White;
         }
     }
 }

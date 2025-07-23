@@ -19,6 +19,7 @@ namespace AgrineUI.Forms
         }
 
         private bool darkMode = false;
+        private System.Drawing.Color palette = Color.CornflowerBlue;
 
         [Category("Theme")]
         public bool DarkMode
@@ -30,11 +31,13 @@ namespace AgrineUI.Forms
                 if (value)
                 {
                     this.styleManager1.ManagerStyle = eStyle.VisualStudio2012Dark;
-                    this.BackColor = Color.FromArgb(20, 20, 20);
+                    this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(this.styleManager1.MetroColorParameters.CanvasColor, this.palette);
+                    this.BackColor = Color.FromArgb(25, 25, 25);
                 }
                 else
                 {
                     this.styleManager1.ManagerStyle = eStyle.VisualStudio2012Light;
+                    this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(this.styleManager1.MetroColorParameters.CanvasColor, this.palette);
                     this.BackColor = Color.White;
                 }
             }
@@ -43,10 +46,11 @@ namespace AgrineUI.Forms
         [Category("Theme")]
         public System.Drawing.Color Palette
         {
-            get { return this.styleManager1.MetroColorParameters.BaseColor; }
+            get { return this.palette; }
             set
             {
                 this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(this.styleManager1.MetroColorParameters.CanvasColor, value);
+                this.palette = value;
             }
         }
 
