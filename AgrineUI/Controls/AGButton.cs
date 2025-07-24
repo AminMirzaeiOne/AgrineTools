@@ -12,10 +12,20 @@ namespace AgrineUI.Controls
 {
     public class AGButton : DevComponents.DotNetBar.ButtonX
     {
-        public AGButton() { }
+        public AGButton() 
+        {
+            this.InitializeComponent();
+        }
 
-        [Category("Appearance")]
-        public float Radius { get; set; } = 2f;
+        [Category("Border")]
+        public byte BorderSize { get; set; } = 2;
+
+        [Category("Border")]
+        public byte BorderRadius { get; set; } = 20;
+
+        [Category("Border")]
+        public System.Drawing.Color BorderColor { get; set; } = System.Drawing.Color.Tomato;
+
 
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -23,15 +33,20 @@ namespace AgrineUI.Controls
 
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
-            using (GraphicsPath GraphPath = GetRoundPath(Rect, 20))
+            using (GraphicsPath GraphPath = AgrineUI.Graphics.AGRadius.GetRoundPath(Rect, this.BorderRadius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.Tomato, this.Radius))
+                using (Pen pen = new Pen(this.BorderColor, this.BorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
+        }
+
+        private void InitializeComponent()
+        {
+            this.Font = new Font("Segoe UI Semibold", 9f);
         }
     }
 }

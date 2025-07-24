@@ -36,7 +36,7 @@
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(132, 174);
+            this.buttonX1.Location = new System.Drawing.Point(259, 313);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Size = new System.Drawing.Size(184, 85);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -49,18 +49,19 @@
             // 
             this.agButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.agButton1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.agButton1.Location = new System.Drawing.Point(344, 46);
+            this.agButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.agButton1.Location = new System.Drawing.Point(338, 82);
             this.agButton1.Name = "agButton1";
-            this.agButton1.Size = new System.Drawing.Size(270, 104);
+            this.agButton1.Radius = 2F;
+            this.agButton1.Size = new System.Drawing.Size(246, 141);
             this.agButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.agButton1.TabIndex = 1;
             this.agButton1.Text = "agButton1";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(729, 483);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.ClientSize = new System.Drawing.Size(785, 626);
             this.Controls.Add(this.agButton1);
             this.Controls.Add(this.buttonX1);
             this.Margin = new System.Windows.Forms.Padding(4);

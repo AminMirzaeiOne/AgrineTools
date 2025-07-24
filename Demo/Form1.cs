@@ -19,10 +19,17 @@ namespace Demo
 
         private void buttonX1_Click(object sender, EventArgs e)
         {
-            if (this.DarkMode)
-                this.DarkMode = false;
-            else
-                this.DarkMode = true;
+            
+        }
+
+        private void ribbonBar1_ItemClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
