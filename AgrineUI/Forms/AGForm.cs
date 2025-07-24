@@ -62,5 +62,24 @@ namespace AgrineUI.Forms
             }
         }
 
+        private void PaletteCheck()
+        {
+
+        }
+
+        public System.Collections.Generic.IEnumerable<System.Windows.Forms.Control> GetSelfAndChildrenRecursive(System.Windows.Forms.Control parent)
+        {
+            List<Control> controls = new List<Control>();
+
+            foreach (Control child in parent.Controls)
+            {
+                controls.AddRange(GetSelfAndChildrenRecursive(child));
+            }
+
+            controls.Add(parent);
+
+            return controls;
+        }
+
     }
 }
