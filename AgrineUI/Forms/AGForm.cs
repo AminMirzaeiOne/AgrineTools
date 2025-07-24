@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace AgrineUI.Forms
         {
             InitializeComponent();
             this.ThemeCheck();
+            this.PaletteCheck();
             this.AutoScaleMode = AutoScaleMode.Inherit;
         }
 
@@ -31,6 +33,7 @@ namespace AgrineUI.Forms
             { 
                 this.darkMode = value;
                 this.ThemeCheck();
+                this.PaletteCheck();
             }
         }
 
@@ -43,6 +46,7 @@ namespace AgrineUI.Forms
                 this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(this.styleManager1.MetroColorParameters.CanvasColor, value);
                 this.palette = value;
                 this.ThemeCheck();
+                this.PaletteCheck();
             }
         }
 
@@ -64,7 +68,7 @@ namespace AgrineUI.Forms
 
         private void PaletteCheck()
         {
-
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGButton>().ToList().ForEach(agbutton => agbutton.BorderColor = this.Palette);
         }
 
         public System.Collections.Generic.IEnumerable<System.Windows.Forms.Control> GetSelfAndChildrenRecursive(System.Windows.Forms.Control parent)

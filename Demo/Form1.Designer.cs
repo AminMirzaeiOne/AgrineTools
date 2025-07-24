@@ -30,13 +30,14 @@
         {
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.agButton1 = new AgrineUI.Controls.AGButton();
+            this.agButton2 = new AgrineUI.Controls.AGButton();
             this.SuspendLayout();
             // 
             // buttonX1
             // 
             this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(259, 313);
+            this.buttonX1.Location = new System.Drawing.Point(12, 23);
             this.buttonX1.Name = "buttonX1";
             this.buttonX1.Size = new System.Drawing.Size(184, 85);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -48,24 +49,50 @@
             // agButton1
             // 
             this.agButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.agButton1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.agButton1.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.agButton1.BorderRadius = ((byte)(40));
+            this.agButton1.BorderSize = ((byte)(3));
+            this.agButton1.DefaultButton = true;
             this.agButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.agButton1.Location = new System.Drawing.Point(338, 82);
             this.agButton1.Name = "agButton1";
-            this.agButton1.Radius = 2F;
             this.agButton1.Size = new System.Drawing.Size(246, 141);
             this.agButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.agButton1.Symbol = "57386";
+            this.agButton1.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material;
             this.agButton1.TabIndex = 1;
-            this.agButton1.Text = "agButton1";
+            this.agButton1.Text = "Unmiute";
+            // 
+            // agButton2
+            // 
+            this.agButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.agButton2.BackColor = System.Drawing.Color.Firebrick;
+            this.agButton2.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.agButton2.BorderRadius = ((byte)(40));
+            this.agButton2.BorderSize = ((byte)(3));
+            this.agButton2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.agButton2.DefaultButton = false;
+            this.agButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.agButton2.Location = new System.Drawing.Point(338, 261);
+            this.agButton2.Name = "agButton2";
+            this.agButton2.Size = new System.Drawing.Size(246, 141);
+            this.agButton2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.agButton2.Symbol = "57387";
+            this.agButton2.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material;
+            this.agButton2.TabIndex = 1;
+            this.agButton2.Text = "Miute";
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(785, 626);
+            this.Controls.Add(this.agButton2);
             this.Controls.Add(this.agButton1);
             this.Controls.Add(this.buttonX1);
+            this.DarkMode = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.Palette = System.Drawing.SystemColors.GrayText;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -75,6 +102,7 @@
 
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private AgrineUI.Controls.AGButton agButton1;
+        private AgrineUI.Controls.AGButton agButton2;
     }
 }
 

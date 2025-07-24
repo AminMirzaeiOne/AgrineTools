@@ -17,6 +17,8 @@ namespace AgrineUI.Controls
             this.InitializeComponent();
         }
 
+        private bool defaultButton = false;
+
         [Category("Border")]
         public byte BorderSize { get; set; } = 2;
 
@@ -26,6 +28,23 @@ namespace AgrineUI.Controls
         [Category("Border")]
         public System.Drawing.Color BorderColor { get; set; } = System.Drawing.Color.Tomato;
 
+        [Category("Appearance")]
+        public bool DefaultButton
+        {
+            get { return this.defaultButton; }
+            set
+            {
+                this.defaultButton = value;
+                if (value)
+                {
+                    this.ColorTable = DevComponents.DotNetBar.eButtonColor.BlueWithBackground;
+                }
+                else
+                {
+                    this.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+                }
+            }
+        }
 
         protected override void OnPaint(PaintEventArgs e)
         {

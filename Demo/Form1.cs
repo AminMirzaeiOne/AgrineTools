@@ -19,17 +19,9 @@ namespace Demo
 
         private void buttonX1_Click(object sender, EventArgs e)
         {
-            
+            this.Palette = Color.SlateBlue;
+            this.DarkMode = false;
         }
 
-        private void ribbonBar1_ItemClick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ribbonControl1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
