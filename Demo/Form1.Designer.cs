@@ -31,6 +31,7 @@
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.agButton1 = new AgrineUI.Controls.AGButton();
             this.agButton2 = new AgrineUI.Controls.AGButton();
+            this.agRectangle1 = new AgrineUI.Shapes.AGRectangle();
             this.SuspendLayout();
             // 
             // buttonX1
@@ -82,10 +83,23 @@
             this.agButton2.TabIndex = 1;
             this.agButton2.Text = "Miute";
             // 
+            // agRectangle1
+            // 
+            this.agRectangle1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.agRectangle1.BorderColor = System.Drawing.Color.Red;
+            this.agRectangle1.BorderRadius = ((byte)(1));
+            this.agRectangle1.BorderSize = ((byte)(5));
+            this.agRectangle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agRectangle1.Location = new System.Drawing.Point(69, 424);
+            this.agRectangle1.Name = "agRectangle1";
+            this.agRectangle1.Size = new System.Drawing.Size(145, 146);
+            this.agRectangle1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(785, 626);
+            this.Controls.Add(this.agRectangle1);
             this.Controls.Add(this.agButton2);
             this.Controls.Add(this.agButton1);
             this.Controls.Add(this.buttonX1);
@@ -103,6 +117,7 @@
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private AgrineUI.Controls.AGButton agButton1;
         private AgrineUI.Controls.AGButton agButton2;
+        private AgrineUI.Shapes.AGRectangle agRectangle1;
     }
 }
 
