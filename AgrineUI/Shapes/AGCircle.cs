@@ -32,7 +32,7 @@ namespace AgrineUI.Shapes
             using (GraphicsPath GraphPath = AgrineUI.Graphics.AGRadius.GetRoundPath(Rect, 200))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.SlateBlue, 2))
+                using (Pen pen = new Pen(this.BorderColor, this.BorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
