@@ -32,6 +32,7 @@
             this.agButton1 = new AgrineUI.Controls.AGButton();
             this.agButton2 = new AgrineUI.Controls.AGButton();
             this.agRectangle1 = new AgrineUI.Shapes.AGRectangle();
+            this.agCircle1 = new AgrineUI.Shapes.AGCircle();
             this.SuspendLayout();
             // 
             // buttonX1
@@ -55,7 +56,7 @@
             this.agButton1.BorderSize = ((byte)(3));
             this.agButton1.DefaultButton = true;
             this.agButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.agButton1.Location = new System.Drawing.Point(338, 82);
+            this.agButton1.Location = new System.Drawing.Point(339, 17);
             this.agButton1.Name = "agButton1";
             this.agButton1.Size = new System.Drawing.Size(246, 141);
             this.agButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -74,7 +75,7 @@
             this.agButton2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.agButton2.DefaultButton = false;
             this.agButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.agButton2.Location = new System.Drawing.Point(338, 261);
+            this.agButton2.Location = new System.Drawing.Point(339, 196);
             this.agButton2.Name = "agButton2";
             this.agButton2.Size = new System.Drawing.Size(246, 141);
             this.agButton2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -86,7 +87,7 @@
             // agRectangle1
             // 
             this.agRectangle1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.agRectangle1.BorderColor = System.Drawing.Color.Red;
+            this.agRectangle1.BorderColor = System.Drawing.SystemColors.GrayText;
             this.agRectangle1.BorderRadius = ((byte)(1));
             this.agRectangle1.BorderSize = ((byte)(5));
             this.agRectangle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -95,10 +96,20 @@
             this.agRectangle1.Size = new System.Drawing.Size(145, 146);
             this.agRectangle1.TabIndex = 2;
             // 
+            // agCircle1
+            // 
+            this.agCircle1.BackColor = System.Drawing.Color.White;
+            this.agCircle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agCircle1.Location = new System.Drawing.Point(350, 399);
+            this.agCircle1.Name = "agCircle1";
+            this.agCircle1.Size = new System.Drawing.Size(200, 200);
+            this.agCircle1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(785, 626);
+            this.Controls.Add(this.agCircle1);
             this.Controls.Add(this.agRectangle1);
             this.Controls.Add(this.agButton2);
             this.Controls.Add(this.agButton1);
@@ -118,6 +129,7 @@
         private AgrineUI.Controls.AGButton agButton1;
         private AgrineUI.Controls.AGButton agButton2;
         private AgrineUI.Shapes.AGRectangle agRectangle1;
+        private AgrineUI.Shapes.AGCircle agCircle1;
     }
 }
 
