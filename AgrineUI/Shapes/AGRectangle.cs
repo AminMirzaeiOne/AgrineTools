@@ -16,5 +16,16 @@ namespace AgrineUI.Shapes
         {
             InitializeComponent();
         }
+
+        [Category("Border")]
+        public byte BorderSize { get; set; } = 2;
+
+        [Category("Border")]
+        public byte BorderRadius { get; set; } = 20;
+
+        [Category("Border")]
+        public System.Drawing.Color BorderColor { get; set; } = System.Drawing.Color.Tomato;
+
+
     }
 }
