@@ -26,6 +26,11 @@ namespace AgrineUI.Practical.Actions
                 switch (value)
                 {
                     case OperationTypes.Shutdown:
+                        AgrineUI.Practical.Actions.Windows.Shutdown();
+                        break;
+
+                    case OperationTypes.Restart:
+                        AgrineUI.Practical.Actions.Windows.Restart();
                         break;
                 }
             }
@@ -38,6 +43,15 @@ namespace AgrineUI.Practical.Actions
         public static void Shutdown(byte delay = 5)
         {
             Process.Start($"shutdown", "/s /t " + delay);
+        }
+
+        /// <summary>
+        /// Windows operating system restart action
+        /// </summary>
+        /// <param name="delay">Windows restart delay value</param>
+        public static void Restart(byte delay = 5)
+        {
+            Process.Start($"shutdown", "/r /t " + delay);
         }
 
     }
