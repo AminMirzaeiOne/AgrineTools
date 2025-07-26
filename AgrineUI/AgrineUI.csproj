@@ -96,7 +96,7 @@
     <Folder Include="Fonts\" />
     <Folder Include="Icons\" />
     <Folder Include="Messages\" />
-    <Folder Include="Practical\" />
+    <Folder Include="Practical\Actions\" />
     <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>
