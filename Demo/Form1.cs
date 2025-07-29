@@ -17,10 +17,9 @@ namespace Demo
             InitializeComponent();
         }
 
-        private void buttonX1_Click(object sender, EventArgs e)
+        private async void buttonX1_Click(object sender, EventArgs e)
         {
-            this.Palette = Color.SlateBlue;
-            this.DarkMode = false;
+           await AgrineUI.Practical.Actions.Windows.Lockup();
         }
 
     }

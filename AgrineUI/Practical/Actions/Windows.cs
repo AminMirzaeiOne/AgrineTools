@@ -12,7 +12,7 @@ namespace AgrineUI.Practical.Actions
     {
         public enum OperationTypes
         {
-            None, Shutdown, Restart, Sleep, Look
+            None, Shutdown, Restart, Sleep, Lockup
         }
 
         private static AgrineUI.Practical.Actions.Windows.OperationTypes operation = OperationTypes.None;
@@ -32,6 +32,10 @@ namespace AgrineUI.Practical.Actions
                     case OperationTypes.Restart:
                         AgrineUI.Practical.Actions.Windows.Restart();
                         break;
+
+                    case OperationTypes.Lockup:
+                        AgrineUI.Practical.Actions.Windows.Lockup();
+                        break;
                 }
             }
         }
@@ -39,7 +43,7 @@ namespace AgrineUI.Practical.Actions
         /// <summary>
         /// Windows operating system shutdown action
         /// </summary>
-        /// <param name="delay">Windows shutdown delay value</param>
+        /// <param name="delay">Windows shutdown delay value (Based on sec)</param>
         public static void Shutdown(byte delay = 5)
         {
             Process.Start($"shutdown", "/s /t " + delay);
@@ -48,11 +52,23 @@ namespace AgrineUI.Practical.Actions
         /// <summary>
         /// Windows operating system restart action
         /// </summary>
-        /// <param name="delay">Windows restart delay value</param>
+        /// <param name="delay">Windows restart delay value (Based on sec)</param>
         public static void Restart(byte delay = 5)
         {
             Process.Start($"shutdown", "/r /t " + delay);
         }
+
+        /// <summary>
+        /// Windows operating system Lockup action
+        /// </summary>
+        /// <param name="delay">Windows lockup delay value (Based on sec)</param>
+        public static async Task Lockup(byte delay = 5)
+        {
+            await Task.Delay(delay * 1000);
+            Process.Start("rundll32.exe", "user32.dll,LockWorkStation");
+        }
+
+
 
     }
 }
