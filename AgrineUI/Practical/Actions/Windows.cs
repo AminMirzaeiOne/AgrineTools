@@ -12,7 +12,7 @@ namespace AgrineUI.Practical.Actions
     {
         public enum OperationTypes
         {
-            None, Shutdown, Restart, Sleep, Lockup
+            None, Shutdown, Restart, Sleep, Lockup, WiFiOn, WiFiOff, BluetoothOn, BluetoothOff, VolumeUp, VolumeDown, BrightnessUp, BrightnesDown
         }
 
         private static AgrineUI.Practical.Actions.Windows.OperationTypes operation = OperationTypes.None;
