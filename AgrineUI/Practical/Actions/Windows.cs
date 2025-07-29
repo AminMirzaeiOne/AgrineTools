@@ -33,6 +33,10 @@ namespace AgrineUI.Practical.Actions
                         AgrineUI.Practical.Actions.Windows.Restart();
                         break;
 
+                    case OperationTypes.Sleep:
+                        AgrineUI.Practical.Actions.Windows.Sleep();
+                        break;
+
                     case OperationTypes.Lockup:
                         AgrineUI.Practical.Actions.Windows.Lockup();
                         break;
@@ -56,6 +60,16 @@ namespace AgrineUI.Practical.Actions
         public static void Restart(byte delay = 5)
         {
             Process.Start($"shutdown", "/r /t " + delay);
+        }
+
+        /// <summary>
+        /// Windows operating system sleep action
+        /// </summary>
+        /// <param name="delay">Windows sleep delay value (Based on sec)</param>
+        public static async Task Sleep(byte delay = 5)
+        {
+            await Task.Delay(delay * 1000);
+            Process.Start("rundll32.exe", "powrprof.dll,SetSuspendState 0,1,0");
         }
 
         /// <summary>

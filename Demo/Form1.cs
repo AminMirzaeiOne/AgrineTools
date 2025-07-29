@@ -19,7 +19,7 @@ namespace Demo
 
         private async void buttonX1_Click(object sender, EventArgs e)
         {
-           await AgrineUI.Practical.Actions.Windows.Lockup();
+           await AgrineUI.Practical.Actions.Windows.Sleep();
         }
 
     }
