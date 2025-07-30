@@ -33,12 +33,6 @@
             this.agButton2 = new AgrineUI.Controls.AGButton();
             this.agRectangle1 = new AgrineUI.Shapes.AGRectangle();
             this.agCircle1 = new AgrineUI.Shapes.AGCircle();
-            this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.comboItem1 = new DevComponents.Editors.ComboItem();
-            this.comboItem2 = new DevComponents.Editors.ComboItem();
-            this.comboItem3 = new DevComponents.Editors.ComboItem();
-            this.comboItem4 = new DevComponents.Editors.ComboItem();
-            this.comboItem5 = new DevComponents.Editors.ComboItem();
             this.SuspendLayout();
             // 
             // buttonX1
@@ -113,50 +107,10 @@
             this.agCircle1.Size = new System.Drawing.Size(200, 200);
             this.agCircle1.TabIndex = 3;
             // 
-            // comboBoxEx1
-            // 
-            this.comboBoxEx1.DisplayMember = "Text";
-            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxEx1.ForeColor = System.Drawing.Color.White;
-            this.comboBoxEx1.FormattingEnabled = true;
-            this.comboBoxEx1.ItemHeight = 28;
-            this.comboBoxEx1.Items.AddRange(new object[] {
-            this.comboItem1,
-            this.comboItem2,
-            this.comboItem3,
-            this.comboItem4,
-            this.comboItem5});
-            this.comboBoxEx1.Location = new System.Drawing.Point(718, 230);
-            this.comboBoxEx1.Name = "comboBoxEx1";
-            this.comboBoxEx1.Size = new System.Drawing.Size(224, 34);
-            this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxEx1.TabIndex = 4;
-            // 
-            // comboItem1
-            // 
-            this.comboItem1.Text = "comboItem1";
-            // 
-            // comboItem2
-            // 
-            this.comboItem2.Text = "comboItem2";
-            // 
-            // comboItem3
-            // 
-            this.comboItem3.Text = "comboItem3";
-            // 
-            // comboItem4
-            // 
-            this.comboItem4.Text = "comboItem4";
-            // 
-            // comboItem5
-            // 
-            this.comboItem5.Text = "comboItem5";
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(1022, 626);
-            this.Controls.Add(this.comboBoxEx1);
+            this.ClientSize = new System.Drawing.Size(697, 626);
             this.Controls.Add(this.agCircle1);
             this.Controls.Add(this.agRectangle1);
             this.Controls.Add(this.agButton2);
@@ -165,7 +119,7 @@
             this.DarkMode = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Palette = System.Drawing.SystemColors.GrayText;
+            this.Palette = System.Drawing.SystemColors.Highlight;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -178,12 +132,6 @@
         private AgrineUI.Controls.AGButton agButton2;
         private AgrineUI.Shapes.AGRectangle agRectangle1;
         private AgrineUI.Shapes.AGCircle agCircle1;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
-        private DevComponents.Editors.ComboItem comboItem1;
-        private DevComponents.Editors.ComboItem comboItem2;
-        private DevComponents.Editors.ComboItem comboItem3;
-        private DevComponents.Editors.ComboItem comboItem4;
-        private DevComponents.Editors.ComboItem comboItem5;
     }
 }
 

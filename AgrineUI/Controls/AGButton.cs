@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AgrineUI.Controls
 {
-    public class AGButton : DevComponents.DotNetBar.ButtonX
+    public class AGButton : DevComponents.DotNetBar.ButtonX, AgrineUI.Interfaces.IAGControlBorder
     {
-        public AGButton() 
+        public AGButton()
         {
             this.InitializeComponent();
         }
