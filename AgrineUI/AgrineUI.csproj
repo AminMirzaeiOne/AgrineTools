@@ -53,6 +53,18 @@
     <Compile Include="Controls\AGButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\AGComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AGColorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AGFontDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AGPrintDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\AGForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,9 +106,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dialogs\" />
     <Folder Include="Fonts\" />
     <Folder Include="Icons\" />
+    <Folder Include="Interfaces\" />
     <Folder Include="Messages\" />
     <Folder Include="Sounds\" />
   </ItemGroup>

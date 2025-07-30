@@ -19,7 +19,7 @@ namespace Demo
 
         private async void buttonX1_Click(object sender, EventArgs e)
         {
-            bool x = await AgrineUI.Practical.Actions.Windows.CheckPing();
+            bool x = await AgrineUI.Practical.Actions.Windows.Network.CheckPing();
             MessageBox.Show(x.ToString());
 
            
