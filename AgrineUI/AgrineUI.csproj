@@ -110,6 +110,9 @@
     <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Dialogs\AGColorDialog.resx">
+      <DependentUpon>AGColorDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AGForm.resx">
       <DependentUpon>AGForm.cs</DependentUpon>
     </EmbeddedResource>

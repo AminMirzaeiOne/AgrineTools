@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgrineUI.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,11 +18,11 @@ namespace Demo
             InitializeComponent();
         }
 
-        private async void buttonX1_Click(object sender, EventArgs e)
+        private void buttonX1_Click(object sender, EventArgs e)
         {
-            bool x = await AgrineUI.Practical.Actions.Windows.Network.CheckPing();
-            MessageBox.Show(x.ToString());
 
+            AgrineUI.Dialogs.AGColorDialog aGColorDialog = new AgrineUI.Dialogs.AGColorDialog();
+            aGColorDialog.ShowDialog();
            
         }
 
