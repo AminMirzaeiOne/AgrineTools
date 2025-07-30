@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\AGThemeManageer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\AGThemeManageer.Designer.cs">
+      <DependentUpon>AGThemeManageer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\AGButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -104,7 +110,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Components\" />
     <Folder Include="Fonts\" />
     <Folder Include="Icons\" />
     <Folder Include="Messages\" />
