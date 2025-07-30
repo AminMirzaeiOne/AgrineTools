@@ -21,6 +21,8 @@ namespace Demo
         {
             bool x = await AgrineUI.Practical.Actions.Windows.CheckPing();
             MessageBox.Show(x.ToString());
+
+           
         }
 
     }

@@ -237,12 +237,27 @@ namespace AgrineUI.Practical.Actions
             public static System.Drawing.Color GetColor { get; }
         }
 
-        public struct Information
+        public struct HardwareInfo
         {
             public static string CPUModel { get; }
             public static string Technology { get; }
             public static string CoreSpeed { get; }
+            public static string AmountRam { get; }
+            public static string AmountRemainingRam { get; }
+            public static string AmountStorage { get; }
+            public static string AmountRemainingStorage { get; }
         }
+
+        public struct SoftwareInfo
+        {
+            public static string Name { get; }
+            public static string Version { get; }
+            public static string Edition { get; }
+            public static string Build { get; }
+            public static string Date { get; }
+        }
+
+
 
 
 
