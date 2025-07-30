@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Management;
+using System.Net.NetworkInformation;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace AgrineUI.Practical.Actions
 {
@@ -81,6 +84,67 @@ namespace AgrineUI.Practical.Actions
             await Task.Delay(delay * 1000);
             Process.Start("rundll32.exe", "user32.dll,LockWorkStation");
         }
+
+        public static async Task<bool> CheckPing(string hostname = "8.8.8.8")
+        {
+            try
+            {
+                using (Ping ping = new Ping())
+                {
+                    PingReply reply = await ping.SendPingAsync(hostname, 3000); // تایم‌اوت ۳ ثانیه
+                    return reply.Status == IPStatus.Success;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static bool CheckWiFiConnection()
+        {
+            var interfaces = NetworkInterface.GetAllNetworkInterfaces();
+
+            foreach (var ni in interfaces)
+            {
+                if (ni.NetworkInterfaceType == NetworkInterfaceType.Wireless80211 &&
+                    ni.OperationalStatus == OperationalStatus.Up)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static async Task<bool> CheckInternetConnection()
+        {
+            return await CheckPing("8.8.8.8");
+        }
+
+        public static bool CheckBluetoothConnection()
+        {
+            try
+            {
+                using (var searcher = new ManagementObjectSearcher("SELECT * FROM Win32_PnPEntity WHERE Name LIKE '%Bluetooth%'"))
+                {
+                    foreach (var device in searcher.Get())
+                    {
+                        var status = device["Status"]?.ToString();
+                        if (status == "OK")
+                            return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" خطا در برسی وضعیت بلوتوث سیستم" +  ex.Message);
+            }
+
+            return false;
+        }
+
+
 
 
 
