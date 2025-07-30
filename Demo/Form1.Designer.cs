@@ -35,6 +35,8 @@
             this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.checkBoxX1 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.switchButton1 = new DevComponents.DotNetBar.Controls.SwitchButton();
+            this.checkBoxX2 = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.checkBoxX3 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.SuspendLayout();
             // 
             // buttonX1
@@ -53,7 +55,7 @@
             // agButton1
             // 
             this.agButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.agButton1.BorderColor = System.Drawing.Color.YellowGreen;
+            this.agButton1.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.agButton1.BorderRadius = ((byte)(40));
             this.agButton1.BorderSize = ((byte)(3));
             this.agButton1.DefaultButton = true;
@@ -72,7 +74,7 @@
             // 
             this.agButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.agButton2.BackColor = System.Drawing.Color.Firebrick;
-            this.agButton2.BorderColor = System.Drawing.Color.YellowGreen;
+            this.agButton2.BorderColor = System.Drawing.Color.MediumSeaGreen;
             this.agButton2.BorderRadius = ((byte)(40));
             this.agButton2.BorderSize = ((byte)(3));
             this.agButton2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
@@ -127,13 +129,16 @@
             // 
             // 
             this.checkBoxX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.checkBoxX1.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
             this.checkBoxX1.CheckSignSize = new System.Drawing.Size(20, 20);
-            this.checkBoxX1.Location = new System.Drawing.Point(455, 405);
+            this.checkBoxX1.Location = new System.Drawing.Point(359, 370);
+            this.checkBoxX1.Margin = new System.Windows.Forms.Padding(10);
             this.checkBoxX1.Name = "checkBoxX1";
-            this.checkBoxX1.Size = new System.Drawing.Size(171, 26);
+            this.checkBoxX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBoxX1.Size = new System.Drawing.Size(302, 58);
             this.checkBoxX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.checkBoxX1.TabIndex = 3;
-            this.checkBoxX1.Text = " Use Mobile";
+            this.checkBoxX1.Text = " برسی کانکشن ";
             // 
             // switchButton1
             // 
@@ -149,11 +154,47 @@
             this.switchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.switchButton1.TabIndex = 4;
             // 
+            // checkBoxX2
+            // 
+            // 
+            // 
+            // 
+            this.checkBoxX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.checkBoxX2.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.checkBoxX2.CheckSignSize = new System.Drawing.Size(20, 20);
+            this.checkBoxX2.Location = new System.Drawing.Point(452, 448);
+            this.checkBoxX2.Margin = new System.Windows.Forms.Padding(10);
+            this.checkBoxX2.Name = "checkBoxX2";
+            this.checkBoxX2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBoxX2.Size = new System.Drawing.Size(209, 58);
+            this.checkBoxX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.checkBoxX2.TabIndex = 3;
+            this.checkBoxX2.Text = " برسی کانکشن ";
+            // 
+            // checkBoxX3
+            // 
+            // 
+            // 
+            // 
+            this.checkBoxX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.checkBoxX3.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.checkBoxX3.CheckSignSize = new System.Drawing.Size(20, 20);
+            this.checkBoxX3.Location = new System.Drawing.Point(471, 526);
+            this.checkBoxX3.Margin = new System.Windows.Forms.Padding(10);
+            this.checkBoxX3.Name = "checkBoxX3";
+            this.checkBoxX3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.checkBoxX3.Size = new System.Drawing.Size(190, 58);
+            this.checkBoxX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.checkBoxX3.TabIndex = 3;
+            this.checkBoxX3.Text = " برسی کانکشن ";
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(697, 626);
             this.Controls.Add(this.switchButton1);
+            this.Controls.Add(this.checkBoxX3);
+            this.Controls.Add(this.checkBoxX2);
             this.Controls.Add(this.checkBoxX1);
             this.Controls.Add(this.textBoxX2);
             this.Controls.Add(this.textBoxX1);
@@ -163,7 +204,7 @@
             this.DarkMode = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Palette = System.Drawing.Color.YellowGreen;
+            this.Palette = System.Drawing.Color.MediumSeaGreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -178,6 +219,8 @@
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX2;
         private DevComponents.DotNetBar.Controls.CheckBoxX checkBoxX1;
         private DevComponents.DotNetBar.Controls.SwitchButton switchButton1;
+        private DevComponents.DotNetBar.Controls.CheckBoxX checkBoxX2;
+        private DevComponents.DotNetBar.Controls.CheckBoxX checkBoxX3;
     }
 }
 
