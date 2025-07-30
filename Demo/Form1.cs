@@ -19,7 +19,8 @@ namespace Demo
 
         private async void buttonX1_Click(object sender, EventArgs e)
         {
-           await AgrineUI.Practical.Actions.Windows.Sleep();
+            bool x = await AgrineUI.Practical.Actions.Windows.CheckPing();
+            MessageBox.Show(x.ToString());
         }
 
     }
