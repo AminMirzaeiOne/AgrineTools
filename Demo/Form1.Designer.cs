@@ -31,8 +31,10 @@
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.agButton1 = new AgrineUI.Controls.AGButton();
             this.agButton2 = new AgrineUI.Controls.AGButton();
-            this.agRectangle1 = new AgrineUI.Shapes.AGRectangle();
-            this.agCircle1 = new AgrineUI.Shapes.AGCircle();
+            this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.checkBoxX1 = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.switchButton1 = new DevComponents.DotNetBar.Controls.SwitchButton();
             this.SuspendLayout();
             // 
             // buttonX1
@@ -51,7 +53,7 @@
             // agButton1
             // 
             this.agButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.agButton1.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            this.agButton1.BorderColor = System.Drawing.Color.YellowGreen;
             this.agButton1.BorderRadius = ((byte)(40));
             this.agButton1.BorderSize = ((byte)(3));
             this.agButton1.DefaultButton = true;
@@ -70,7 +72,7 @@
             // 
             this.agButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.agButton2.BackColor = System.Drawing.Color.Firebrick;
-            this.agButton2.BorderColor = System.Drawing.SystemColors.WindowFrame;
+            this.agButton2.BorderColor = System.Drawing.Color.YellowGreen;
             this.agButton2.BorderRadius = ((byte)(40));
             this.agButton2.BorderSize = ((byte)(3));
             this.agButton2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
@@ -85,35 +87,76 @@
             this.agButton2.TabIndex = 1;
             this.agButton2.Text = "Miute";
             // 
-            // agRectangle1
+            // textBoxX1
             // 
-            this.agRectangle1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.agRectangle1.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.agRectangle1.BorderRadius = ((byte)(1));
-            this.agRectangle1.BorderSize = ((byte)(5));
-            this.agRectangle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agRectangle1.Location = new System.Drawing.Point(69, 424);
-            this.agRectangle1.Name = "agRectangle1";
-            this.agRectangle1.Size = new System.Drawing.Size(145, 146);
-            this.agRectangle1.TabIndex = 2;
+            this.textBoxX1.BackColor = System.Drawing.Color.Black;
             // 
-            // agCircle1
             // 
-            this.agCircle1.BackColor = System.Drawing.Color.White;
-            this.agCircle1.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.agCircle1.BorderSize = ((byte)(2));
-            this.agCircle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agCircle1.Location = new System.Drawing.Point(350, 399);
-            this.agCircle1.Name = "agCircle1";
-            this.agCircle1.Size = new System.Drawing.Size(200, 200);
-            this.agCircle1.TabIndex = 3;
+            // 
+            this.textBoxX1.Border.Class = "TextBoxBorder";
+            this.textBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textBoxX1.DisabledBackColor = System.Drawing.Color.Black;
+            this.textBoxX1.ForeColor = System.Drawing.Color.White;
+            this.textBoxX1.Location = new System.Drawing.Point(180, 434);
+            this.textBoxX1.Name = "textBoxX1";
+            this.textBoxX1.PreventEnterBeep = true;
+            this.textBoxX1.Size = new System.Drawing.Size(233, 34);
+            this.textBoxX1.TabIndex = 2;
+            this.textBoxX1.WatermarkText = "Enter Text";
+            // 
+            // textBoxX2
+            // 
+            this.textBoxX2.BackColor = System.Drawing.Color.Black;
+            // 
+            // 
+            // 
+            this.textBoxX2.Border.Class = "TextBoxBorder";
+            this.textBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textBoxX2.DisabledBackColor = System.Drawing.Color.Black;
+            this.textBoxX2.ForeColor = System.Drawing.Color.White;
+            this.textBoxX2.Location = new System.Drawing.Point(180, 489);
+            this.textBoxX2.Name = "textBoxX2";
+            this.textBoxX2.PreventEnterBeep = true;
+            this.textBoxX2.Size = new System.Drawing.Size(233, 34);
+            this.textBoxX2.TabIndex = 2;
+            this.textBoxX2.WatermarkText = "Enter Text";
+            // 
+            // checkBoxX1
+            // 
+            // 
+            // 
+            // 
+            this.checkBoxX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.checkBoxX1.CheckSignSize = new System.Drawing.Size(20, 20);
+            this.checkBoxX1.Location = new System.Drawing.Point(455, 405);
+            this.checkBoxX1.Name = "checkBoxX1";
+            this.checkBoxX1.Size = new System.Drawing.Size(171, 26);
+            this.checkBoxX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.checkBoxX1.TabIndex = 3;
+            this.checkBoxX1.Text = " Use Mobile";
+            // 
+            // switchButton1
+            // 
+            // 
+            // 
+            // 
+            this.switchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.switchButton1.Location = new System.Drawing.Point(121, 329);
+            this.switchButton1.Name = "switchButton1";
+            this.switchButton1.OffText = "خاموش";
+            this.switchButton1.OnText = "روشن";
+            this.switchButton1.Size = new System.Drawing.Size(102, 33);
+            this.switchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.switchButton1.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(697, 626);
-            this.Controls.Add(this.agCircle1);
-            this.Controls.Add(this.agRectangle1);
+            this.Controls.Add(this.switchButton1);
+            this.Controls.Add(this.checkBoxX1);
+            this.Controls.Add(this.textBoxX2);
+            this.Controls.Add(this.textBoxX1);
             this.Controls.Add(this.agButton2);
             this.Controls.Add(this.agButton1);
             this.Controls.Add(this.buttonX1);
@@ -131,8 +174,10 @@
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private AgrineUI.Controls.AGButton agButton1;
         private AgrineUI.Controls.AGButton agButton2;
-        private AgrineUI.Shapes.AGRectangle agRectangle1;
-        private AgrineUI.Shapes.AGCircle agCircle1;
+        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
+        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX2;
+        private DevComponents.DotNetBar.Controls.CheckBoxX checkBoxX1;
+        private DevComponents.DotNetBar.Controls.SwitchButton switchButton1;
     }
 }
 

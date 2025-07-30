@@ -22,6 +22,16 @@ namespace AgrineUI.Forms
             this.AutoScaleMode = AutoScaleMode.Inherit;
         }
 
+        public AGForm(AGForm parentform)
+        {
+            InitializeComponent();
+            this.ThemeCheck();
+            this.PaletteCheck();
+            this.AutoScaleMode = AutoScaleMode.Inherit;
+            this.DarkMode = parentform.DarkMode;
+            this.Palette = parentform.Palette;
+        }
+
         private bool darkMode = false;
         private System.Drawing.Color palette = Color.Tomato;
 

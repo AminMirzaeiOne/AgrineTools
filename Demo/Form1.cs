@@ -20,15 +20,14 @@ namespace Demo
 
         private void buttonX1_Click(object sender, EventArgs e)
         {
-
-            AgrineUI.Dialogs.AGColorDialog aGColorDialog = new AgrineUI.Dialogs.AGColorDialog();
-            aGColorDialog.ShowDialog();
+            this.DarkMode = !this.DarkMode;
+            this.Palette = Color.Crimson;
            
         }
 
         private void agButton1_Click(object sender, EventArgs e)
         {
-            AgrineUI.Forms.AGForm aG = new AgrineUI.Forms.AGForm();
+            AgrineUI.Forms.AGForm aG = new AgrineUI.Forms.AGForm(this);
             aG.Show();
         }
     }
