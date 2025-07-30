@@ -51,7 +51,7 @@
             // agButton1
             // 
             this.agButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.agButton1.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.agButton1.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.agButton1.BorderRadius = ((byte)(40));
             this.agButton1.BorderSize = ((byte)(3));
             this.agButton1.DefaultButton = true;
@@ -64,12 +64,13 @@
             this.agButton1.SymbolSet = DevComponents.DotNetBar.eSymbolSet.Material;
             this.agButton1.TabIndex = 1;
             this.agButton1.Text = "Unmiute";
+            this.agButton1.Click += new System.EventHandler(this.agButton1_Click);
             // 
             // agButton2
             // 
             this.agButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.agButton2.BackColor = System.Drawing.Color.Firebrick;
-            this.agButton2.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.agButton2.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.agButton2.BorderRadius = ((byte)(40));
             this.agButton2.BorderSize = ((byte)(3));
             this.agButton2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
@@ -87,7 +88,7 @@
             // agRectangle1
             // 
             this.agRectangle1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.agRectangle1.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.agRectangle1.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.agRectangle1.BorderRadius = ((byte)(1));
             this.agRectangle1.BorderSize = ((byte)(5));
             this.agRectangle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,7 +100,7 @@
             // agCircle1
             // 
             this.agCircle1.BackColor = System.Drawing.Color.White;
-            this.agCircle1.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.agCircle1.BorderColor = System.Drawing.SystemColors.WindowFrame;
             this.agCircle1.BorderSize = ((byte)(2));
             this.agCircle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agCircle1.Location = new System.Drawing.Point(350, 399);
@@ -119,7 +120,7 @@
             this.DarkMode = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Palette = System.Drawing.SystemColors.Highlight;
+            this.Palette = System.Drawing.Color.YellowGreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 

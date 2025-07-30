@@ -26,5 +26,10 @@ namespace Demo
            
         }
 
+        private void agButton1_Click(object sender, EventArgs e)
+        {
+            AgrineUI.Forms.AGForm aG = new AgrineUI.Forms.AGForm();
+            aG.Show();
+        }
     }
 }

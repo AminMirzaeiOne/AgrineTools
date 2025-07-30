@@ -110,7 +110,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Fonts\" />
+    <Folder Include="Fonts\Letters\" />
+    <Folder Include="Fonts\Symbol\" />
     <Folder Include="Icons\" />
     <Folder Include="Messages\" />
     <Folder Include="Sounds\" />
