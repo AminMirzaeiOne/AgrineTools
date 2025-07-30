@@ -85,6 +85,11 @@ namespace AgrineUI.Practical.Actions
             Process.Start("rundll32.exe", "user32.dll,LockWorkStation");
         }
 
+        /// <summary>
+        /// Sends a ping to the specified host to check network reachability.
+        /// </summary>
+        /// <param name="hostname">The hostname or IP address to ping.</param>
+        /// <returns>True if the host responds successfully; otherwise, false.</returns>
         public static async Task<bool> CheckPing(string hostname = "8.8.8.8")
         {
             try
@@ -101,6 +106,10 @@ namespace AgrineUI.Practical.Actions
             }
         }
 
+        /// <summary>
+        /// Determines whether the Wi-Fi adapter is enabled and connected on the system.
+        /// </summary>
+        /// <returns>True if Wi-Fi is active and operational; otherwise, false.</returns>
         public static bool CheckWiFiConnection()
         {
             var interfaces = NetworkInterface.GetAllNetworkInterfaces();
@@ -117,11 +126,19 @@ namespace AgrineUI.Practical.Actions
             return false;
         }
 
+        /// <summary>
+        /// Checks if the system has an active internet connection by pinging a reliable IP address.
+        /// </summary>
+        /// <returns>True if the internet is accessible; otherwise, false.</returns>
         public static async Task<bool> CheckInternetConnection()
         {
             return await CheckPing("8.8.8.8");
         }
 
+        /// <summary>
+        /// Checks whether a Bluetooth device is present and enabled on the system.
+        /// </summary>
+        /// <returns>True if Bluetooth hardware is detected and active; otherwise, false.</returns>
         public static bool CheckBluetoothConnection()
         {
             try
