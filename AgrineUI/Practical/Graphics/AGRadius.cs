@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgrineUI.Graphics
+namespace AgrineUI.Practical.Graphics
 {
     public static class AGRadius
     {

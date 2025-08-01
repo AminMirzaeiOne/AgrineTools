@@ -59,7 +59,9 @@
     <Compile Include="Controls\AGButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\AGSwitchButton.cs" />
+    <Compile Include="Controls\AGSwitchButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Dialogs\AGColorDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,9 +83,9 @@
     <Compile Include="Forms\AGFormSplash.Designer.cs">
       <DependentUpon>AGFormSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="Graphics\AGRadius.cs" />
     <Compile Include="Interfaces\IAGControlBorder.cs" />
     <Compile Include="Practical\Actions\Windows.cs" />
+    <Compile Include="Practical\Graphics\AGRadius.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shapes\AGCircle.cs">
       <SubType>UserControl</SubType>
