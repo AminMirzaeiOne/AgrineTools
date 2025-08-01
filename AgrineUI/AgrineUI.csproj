@@ -59,6 +59,7 @@
     <Compile Include="Controls\AGButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\AGSwitchButton.cs" />
     <Compile Include="Dialogs\AGColorDialog.cs">
       <SubType>Form</SubType>
     </Compile>
