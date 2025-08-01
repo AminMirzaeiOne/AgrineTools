@@ -52,7 +52,7 @@ namespace AgrineUI.Controls
 
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
-            using (GraphicsPath GraphPath = AgrineUI.Graphics.AGRadius.GetRoundPath(Rect, this.BorderRadius))
+            using (GraphicsPath GraphPath = AgrineUI.Practical.Graphics.AGRadius.GetRoundPath(Rect, this.BorderRadius))
             {
                 this.Region = new Region(GraphPath);
                 using (Pen pen = new Pen(this.BorderColor, this.BorderSize))

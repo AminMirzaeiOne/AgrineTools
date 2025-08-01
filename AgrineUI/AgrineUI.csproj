@@ -84,6 +84,7 @@
       <DependentUpon>AGFormSplash.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IAGControlBorder.cs" />
+    <Compile Include="Interfaces\IAGShape.cs" />
     <Compile Include="Practical\Actions\Windows.cs" />
     <Compile Include="Practical\Graphics\AGRadius.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

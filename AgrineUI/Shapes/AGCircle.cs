@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgrineUI.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace AgrineUI.Shapes
 {
-    public partial class AGCircle : UserControl
+    public partial class AGCircle : UserControl, AgrineUI.Interfaces.IAGShape
     {
         public AGCircle()
         {
@@ -23,13 +24,14 @@ namespace AgrineUI.Shapes
 
         [Category("Border")]
         public System.Drawing.Color BorderColor { get; set; } = System.Drawing.Color.Tomato;
+        public bool AgreeTheme { get; set; } = false;
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
-            using (GraphicsPath GraphPath = AgrineUI.Graphics.AGRadius.GetRoundPath(Rect, 200))
+            using (GraphicsPath GraphPath = AgrineUI.Practical.Graphics.AGRadius.GetRoundPath(Rect, 200))
             {
                 this.Region = new Region(GraphPath);
                 using (Pen pen = new Pen(this.BorderColor, this.BorderSize))
