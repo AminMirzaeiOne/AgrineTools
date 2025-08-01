@@ -37,6 +37,7 @@
             this.switchButton1 = new DevComponents.DotNetBar.Controls.SwitchButton();
             this.checkBoxX2 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.checkBoxX3 = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.agCircle1 = new AgrineUI.Shapes.AGCircle();
             this.SuspendLayout();
             // 
             // buttonX1
@@ -55,7 +56,7 @@
             // agButton1
             // 
             this.agButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.agButton1.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.agButton1.BorderColor = System.Drawing.Color.MediumTurquoise;
             this.agButton1.BorderRadius = ((byte)(40));
             this.agButton1.BorderSize = ((byte)(3));
             this.agButton1.DefaultButton = true;
@@ -74,7 +75,7 @@
             // 
             this.agButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.agButton2.BackColor = System.Drawing.Color.Firebrick;
-            this.agButton2.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.agButton2.BorderColor = System.Drawing.Color.MediumTurquoise;
             this.agButton2.BorderRadius = ((byte)(40));
             this.agButton2.BorderSize = ((byte)(3));
             this.agButton2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
@@ -99,7 +100,7 @@
             this.textBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.textBoxX1.DisabledBackColor = System.Drawing.Color.Black;
             this.textBoxX1.ForeColor = System.Drawing.Color.White;
-            this.textBoxX1.Location = new System.Drawing.Point(180, 434);
+            this.textBoxX1.Location = new System.Drawing.Point(229, 441);
             this.textBoxX1.Name = "textBoxX1";
             this.textBoxX1.PreventEnterBeep = true;
             this.textBoxX1.Size = new System.Drawing.Size(233, 34);
@@ -116,7 +117,7 @@
             this.textBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.textBoxX2.DisabledBackColor = System.Drawing.Color.Black;
             this.textBoxX2.ForeColor = System.Drawing.Color.White;
-            this.textBoxX2.Location = new System.Drawing.Point(180, 489);
+            this.textBoxX2.Location = new System.Drawing.Point(229, 496);
             this.textBoxX2.Name = "textBoxX2";
             this.textBoxX2.PreventEnterBeep = true;
             this.textBoxX2.Size = new System.Drawing.Size(233, 34);
@@ -188,10 +189,23 @@
             this.checkBoxX3.TabIndex = 3;
             this.checkBoxX3.Text = " برسی کانکشن ";
             // 
+            // agCircle1
+            // 
+            this.agCircle1.AgreeTheme = false;
+            this.agCircle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.agCircle1.BorderColor = System.Drawing.Color.MediumTurquoise;
+            this.agCircle1.BorderSize = ((byte)(2));
+            this.agCircle1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agCircle1.Location = new System.Drawing.Point(23, 396);
+            this.agCircle1.Name = "agCircle1";
+            this.agCircle1.Size = new System.Drawing.Size(124, 124);
+            this.agCircle1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(697, 626);
+            this.Controls.Add(this.agCircle1);
             this.Controls.Add(this.switchButton1);
             this.Controls.Add(this.checkBoxX3);
             this.Controls.Add(this.checkBoxX2);
@@ -204,7 +218,7 @@
             this.DarkMode = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Palette = System.Drawing.Color.MediumSeaGreen;
+            this.Palette = System.Drawing.Color.MediumTurquoise;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
@@ -221,6 +235,7 @@
         private DevComponents.DotNetBar.Controls.SwitchButton switchButton1;
         private DevComponents.DotNetBar.Controls.CheckBoxX checkBoxX2;
         private DevComponents.DotNetBar.Controls.CheckBoxX checkBoxX3;
+        private AgrineUI.Shapes.AGCircle agCircle1;
     }
 }
 
