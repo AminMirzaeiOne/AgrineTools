@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="Animations\AGFlags.cs" />
     <Compile Include="Animations\AGPointFConverter.cs" />
+    <Compile Include="Animations\AGTransfromHelper.cs" />
     <Compile Include="Components\AGThemeManageer.cs">
       <SubType>Component</SubType>
     </Compile>
