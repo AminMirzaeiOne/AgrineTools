@@ -64,6 +64,7 @@
     <Compile Include="Animations\AGDoubleBitmapForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Animations\AGFlags.cs" />
     <Compile Include="Components\AGThemeManageer.cs">
       <SubType>Component</SubType>
     </Compile>
