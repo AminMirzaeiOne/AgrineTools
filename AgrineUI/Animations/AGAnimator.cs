@@ -712,7 +712,7 @@ namespace AgrineUI.Animations
             }
         }
 
-        private readonly Dictionary<Control, DecorationControl> DecorationByControls = new Dictionary<Control, DecorationControl>();
+        private readonly Dictionary<Control, AGDecorationControl> DecorationByControls = new Dictionary<Control, AGDecorationControl>();
 
         public bool CanExtend(object extendee)
         {

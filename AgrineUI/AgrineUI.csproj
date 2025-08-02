@@ -55,6 +55,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Animations\AGController.cs" />
+    <Compile Include="Animations\AGDecorationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Components\AGThemeManageer.cs">
       <SubType>Component</SubType>
     </Compile>
