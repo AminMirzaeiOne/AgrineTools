@@ -79,10 +79,10 @@ namespace AgrineUI.Animations
                 CreateParams cp = base.CreateParams;
                 unchecked
                 {
-                    cp.Style = (int)Flags.WindowStyles.WS_POPUP;
+                    cp.Style = (int)AGFlags.WindowStyles.WS_POPUP;
                 }
                 ;
-                cp.ExStyle |= (int)Flags.WindowStyles.WS_EX_NOACTIVATE | (int)Flags.WindowStyles.WS_EX_TOOLWINDOW;
+                cp.ExStyle |= (int)AGFlags.WindowStyles.WS_EX_NOACTIVATE | (int)Flags.WindowStyles.WS_EX_TOOLWINDOW;
                 cp.X = this.Location.X;
                 cp.Y = this.Location.Y;
                 return cp;

@@ -91,9 +91,9 @@ namespace AgrineUI.Animations
         public AGController(Control control, AnimateMode mode, AGAnimation animation, float timeStep, Rectangle controlClipRect)
         {
             if (control is Form)
-                DoubleBitmap = new DoubleBitmapForm();
+                DoubleBitmap = new AGDoubleBitmapForm();
             else
-                DoubleBitmap = new DoubleBitmapControl();
+                DoubleBitmap = new AGDoubleBitmapControl();
 
             (DoubleBitmap as IFakeControl).FramePainting += OnFramePainting;
             (DoubleBitmap as IFakeControl).FramePainted += OnFramePainting;
@@ -298,9 +298,9 @@ namespace AgrineUI.Animations
 
                 if (e.UseDefaultMatrix)
                 {
-                    TransfromHelper.DoScale(e, animation);
-                    TransfromHelper.DoRotate(e, animation);
-                    TransfromHelper.DoSlide(e, animation, this.Upside);
+                    AGTransfromHelper.DoScale(e, animation);
+                    AGTransfromHelper.DoRotate(e, animation);
+                    AGTransfromHelper.DoSlide(e, animation, this.Upside);
                 }
             }
             catch
@@ -342,11 +342,11 @@ namespace AgrineUI.Animations
 
                 if (e.UseDefaultTransform)
                 {
-                    TransfromHelper.DoBlind(e, animation);
-                    TransfromHelper.DoMosaic(e, animation, ref buffer, ref pixelsBuffer);
+                    AGTransfromHelper.DoBlind(e, animation);
+                    AGTransfromHelper.DoMosaic(e, animation, ref buffer, ref pixelsBuffer);
 
-                    TransfromHelper.DoTransparent(e, animation);
-                    TransfromHelper.DoLeaf(e, animation);
+                    AGTransfromHelper.DoTransparent(e, animation);
+                    AGTransfromHelper.DoLeaf(e, animation);
                 }
 
                 System.Runtime.InteropServices.Marshal.Copy(argbValues, 0, ptr, numBytes);
@@ -366,7 +366,7 @@ namespace AgrineUI.Animations
             bmp.Save("c:\\bmp.png");
 #endif
             if (animation.AnimateOnlyDifferences)
-                TransfromHelper.CalcDifference(bmp, BgBmp);
+                AGTransfromHelper.CalcDifference(bmp, BgBmp);
 
             ctrlBmp = bmp;
             mode = AnimateMode.Update;

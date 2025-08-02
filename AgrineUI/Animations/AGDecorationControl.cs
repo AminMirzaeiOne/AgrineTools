@@ -179,7 +179,7 @@ namespace AgrineUI.Animations
                     {
                         switch (DecorationType)
                         {
-                            case DecorationType.BottomMirror: TransfromHelper.DoBottomMirror(e); break;
+                            case DecorationType.BottomMirror: AGTransfromHelper.DoBottomMirror(e); break;
                         }
                     }
                 }

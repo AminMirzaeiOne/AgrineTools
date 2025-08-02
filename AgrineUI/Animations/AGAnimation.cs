@@ -14,30 +14,30 @@ namespace AgrineUI.Animations
     /// </summary>
     public class AGAnimation
     {
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(PointFConverter))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(AGPointFConverter))]
         public PointF SlideCoeff { get; set; }
 
         public float RotateCoeff { get; set; }
         public float RotateLimit { get; set; }
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(PointFConverter))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(AGPointFConverter))]
         public PointF ScaleCoeff { get; set; }
 
         public float TransparencyCoeff { get; set; }
         public float LeafCoeff { get; set; }
 
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(PointFConverter))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(AGPointFConverter))]
         public PointF MosaicShift { get; set; }
 
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(PointFConverter))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(AGPointFConverter))]
         public PointF MosaicCoeff { get; set; }
 
         public int MosaicSize { get; set; }
 
 
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(PointFConverter))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible), EditorBrowsable(EditorBrowsableState.Advanced), TypeConverter(typeof(AGPointFConverter))]
         public PointF BlindCoeff { get; set; }
 
         public float TimeCoeff { get; set; }

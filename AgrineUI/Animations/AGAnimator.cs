@@ -554,7 +554,7 @@ namespace AgrineUI.Animations
 
         private AGController CreateDoubleBitmap(Control control, AnimateMode mode, AGAnimation animation, Rectangle clipRect)
         {
-            var controller = new Controller(control, mode, animation, TimeStep, clipRect);
+            var controller = new AGController(control, mode, animation, TimeStep, clipRect);
             controller.Upside = this.Upside;
             controller.TransfromNeeded += OnTransformNeeded;
             if (NonLinearTransfromNeeded != null)
@@ -652,7 +652,7 @@ namespace AgrineUI.Animations
 
         protected class QueueItem
         {
-            public Animation animation;
+            public AGAnimation animation;
             public AGController controller;
             public Control control;
             public DateTime ActivateTime { get; private set; }
@@ -706,7 +706,7 @@ namespace AgrineUI.Animations
             else
             {
                 if (wrapper == null)
-                    wrapper = new DecorationControl(decoration, control);
+                    wrapper = new AGDecorationControl(decoration, control);
                 wrapper.DecorationType = decoration;
                 DecorationByControls[control] = wrapper;
             }
@@ -753,7 +753,7 @@ namespace AgrineUI.Animations
         public float CurrentTime { get; internal set; }
         public Rectangle ClientRectangle { get; internal set; }
         public Rectangle ClipRectangle { get; internal set; }
-        public Animation Animation { get; set; }
+        public AGAnimation Animation { get; set; }
         public Control Control { get; internal set; }
         public AnimateMode Mode { get; internal set; }
         public bool UseDefaultMatrix { get; set; }
