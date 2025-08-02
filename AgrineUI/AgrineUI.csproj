@@ -54,6 +54,7 @@
     <Compile Include="Animations\AGAnimator.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Animations\AGController.cs" />
     <Compile Include="Components\AGThemeManageer.cs">
       <SubType>Component</SubType>
     </Compile>

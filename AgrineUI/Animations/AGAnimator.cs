@@ -552,7 +552,7 @@ namespace AgrineUI.Animations
                 requests.Add(item);
         }
 
-        private Controller CreateDoubleBitmap(Control control, AnimateMode mode, AGAnimation animation, Rectangle clipRect)
+        private AGController CreateDoubleBitmap(Control control, AnimateMode mode, AGAnimation animation, Rectangle clipRect)
         {
             var controller = new Controller(control, mode, animation, TimeStep, clipRect);
             controller.Upside = this.Upside;
@@ -576,7 +576,7 @@ namespace AgrineUI.Animations
             try
             {
                 //transform point to animated control's coordinates 
-                var db = (Controller)sender;
+                var db = (AGController)sender;
                 db.Upside = this.Upside;
                 var l = e.Location;
                 l.Offset(db.DoubleBitmap.Left - db.AnimatedControl.Left, db.DoubleBitmap.Top - db.AnimatedControl.Top);
@@ -653,7 +653,7 @@ namespace AgrineUI.Animations
         protected class QueueItem
         {
             public Animation animation;
-            public Controller controller;
+            public AGController controller;
             public Control control;
             public DateTime ActivateTime { get; private set; }
             public AnimateMode mode;
