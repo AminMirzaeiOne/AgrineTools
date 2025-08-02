@@ -69,7 +69,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\AGTextBox.cs">
-      <SubType>Component</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Dialogs\AGColorDialog.cs">
       <SubType>Form</SubType>
@@ -123,6 +123,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Animations\" />
     <Folder Include="Fonts\Letters\" />
     <Folder Include="Fonts\Symbol\" />
     <Folder Include="Icons\" />
@@ -130,6 +131,9 @@
     <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\AGTextBox.resx">
+      <DependentUpon>AGTextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\AGColorDialog.resx">
       <DependentUpon>AGColorDialog.cs</DependentUpon>
     </EmbeddedResource>

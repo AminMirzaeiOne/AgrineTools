@@ -63,7 +63,7 @@
             this.agButton1.BorderSize = ((byte)(3));
             this.agButton1.DefaultButton = true;
             this.agButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.agButton1.Location = new System.Drawing.Point(339, 17);
+            this.agButton1.Location = new System.Drawing.Point(253, 17);
             this.agButton1.Name = "agButton1";
             this.agButton1.Size = new System.Drawing.Size(246, 141);
             this.agButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -83,7 +83,7 @@
             this.agButton2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.agButton2.DefaultButton = false;
             this.agButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
-            this.agButton2.Location = new System.Drawing.Point(339, 196);
+            this.agButton2.Location = new System.Drawing.Point(253, 196);
             this.agButton2.Name = "agButton2";
             this.agButton2.Size = new System.Drawing.Size(246, 141);
             this.agButton2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -132,7 +132,7 @@
             // 
             // 
             this.switchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.switchButton1.Location = new System.Drawing.Point(121, 329);
+            this.switchButton1.Location = new System.Drawing.Point(23, 304);
             this.switchButton1.Name = "switchButton1";
             this.switchButton1.OffText = "خاموش";
             this.switchButton1.OnText = "روشن";
@@ -155,9 +155,11 @@
             // agRadioButton1
             // 
             this.agRadioButton1.AutoSize = true;
+            this.agRadioButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agRadioButton1.BorderSize = 3F;
             this.agRadioButton1.CircleSizeMode = AgrineUI.Controls.BoxSizeMode.VeryLarge;
-            this.agRadioButton1.Location = new System.Drawing.Point(425, 396);
+            this.agRadioButton1.ForeColor = System.Drawing.Color.White;
+            this.agRadioButton1.Location = new System.Drawing.Point(23, 143);
             this.agRadioButton1.MinimumSize = new System.Drawing.Size(22, 22);
             this.agRadioButton1.Name = "agRadioButton1";
             this.agRadioButton1.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
@@ -166,14 +168,16 @@
             this.agRadioButton1.TabIndex = 6;
             this.agRadioButton1.TabStop = true;
             this.agRadioButton1.Text = "agRadioButton1";
-            this.agRadioButton1.UseVisualStyleBackColor = true;
+            this.agRadioButton1.UseVisualStyleBackColor = false;
             // 
             // agRadioButton2
             // 
             this.agRadioButton2.AutoSize = true;
+            this.agRadioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agRadioButton2.BorderSize = 3F;
             this.agRadioButton2.CircleSizeMode = AgrineUI.Controls.BoxSizeMode.VeryLarge;
-            this.agRadioButton2.Location = new System.Drawing.Point(425, 447);
+            this.agRadioButton2.ForeColor = System.Drawing.Color.White;
+            this.agRadioButton2.Location = new System.Drawing.Point(23, 194);
             this.agRadioButton2.MinimumSize = new System.Drawing.Size(22, 22);
             this.agRadioButton2.Name = "agRadioButton2";
             this.agRadioButton2.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
@@ -182,14 +186,16 @@
             this.agRadioButton2.TabIndex = 6;
             this.agRadioButton2.TabStop = true;
             this.agRadioButton2.Text = "agRadioButton1";
-            this.agRadioButton2.UseVisualStyleBackColor = true;
+            this.agRadioButton2.UseVisualStyleBackColor = false;
             // 
             // agRadioButton3
             // 
             this.agRadioButton3.AutoSize = true;
+            this.agRadioButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agRadioButton3.BorderSize = 3F;
             this.agRadioButton3.CircleSizeMode = AgrineUI.Controls.BoxSizeMode.VeryLarge;
-            this.agRadioButton3.Location = new System.Drawing.Point(425, 495);
+            this.agRadioButton3.ForeColor = System.Drawing.Color.White;
+            this.agRadioButton3.Location = new System.Drawing.Point(23, 242);
             this.agRadioButton3.MinimumSize = new System.Drawing.Size(22, 22);
             this.agRadioButton3.Name = "agRadioButton3";
             this.agRadioButton3.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
@@ -198,12 +204,12 @@
             this.agRadioButton3.TabIndex = 6;
             this.agRadioButton3.TabStop = true;
             this.agRadioButton3.Text = "agRadioButton1";
-            this.agRadioButton3.UseVisualStyleBackColor = true;
+            this.agRadioButton3.UseVisualStyleBackColor = false;
             // 
             // agCheckBox1
             // 
             this.agCheckBox1.AutoSize = true;
-            this.agCheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.agCheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agCheckBox1.BorderSize = 2F;
             this.agCheckBox1.BoxSizeMode = AgrineUI.Controls.BoxSizeMode.Large;
             this.agCheckBox1.ForeColor = System.Drawing.Color.White;
@@ -221,7 +227,7 @@
             // agCheckBox2
             // 
             this.agCheckBox2.AutoSize = true;
-            this.agCheckBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.agCheckBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agCheckBox2.BorderSize = 2F;
             this.agCheckBox2.BoxSizeMode = AgrineUI.Controls.BoxSizeMode.Large;
             this.agCheckBox2.ForeColor = System.Drawing.Color.White;
