@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animations\AGAnimation.cs" />
+    <Compile Include="Animations\AGAnimator.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\AGThemeManageer.cs">
       <SubType>Component</SubType>
     </Compile>
