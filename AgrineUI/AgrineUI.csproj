@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animations\AGAnimation.cs" />
     <Compile Include="Components\AGThemeManageer.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -123,7 +124,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Animations\" />
     <Folder Include="Fonts\Letters\" />
     <Folder Include="Fonts\Symbol\" />
     <Folder Include="Icons\" />
