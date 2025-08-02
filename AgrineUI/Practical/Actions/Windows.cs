@@ -15,14 +15,14 @@ namespace AgrineUI.Practical.Actions
 {
     public static class Windows
     {
-        public enum OperationTypes
+        public enum WindowsOperationTypes
         {
             None, Shutdown, Restart, Sleep, Lockup, WiFiOn, WiFiOff, BluetoothOn, BluetoothOff, VolumeUp, VolumeDown, BrightnessUp, BrightnesDown
         }
 
-        private static AgrineUI.Practical.Actions.Windows.OperationTypes operation = OperationTypes.None;
+        private static AgrineUI.Practical.Actions.Windows.WindowsOperationTypes operation = WindowsOperationTypes.None;
 
-        public static AgrineUI.Practical.Actions.Windows.OperationTypes Operation
+        public static AgrineUI.Practical.Actions.Windows.WindowsOperationTypes Operation
         {
             get { return operation; }
             set
@@ -30,19 +30,19 @@ namespace AgrineUI.Practical.Actions
                 operation = value;
                 switch (value)
                 {
-                    case OperationTypes.Shutdown:
+                    case WindowsOperationTypes.Shutdown:
                         AgrineUI.Practical.Actions.Windows.Base.Shutdown();
                         break;
 
-                    case OperationTypes.Restart:
+                    case WindowsOperationTypes.Restart:
                         AgrineUI.Practical.Actions.Windows.Base.Restart();
                         break;
 
-                    case OperationTypes.Sleep:
+                    case WindowsOperationTypes.Sleep:
                         AgrineUI.Practical.Actions.Windows.Base.Sleep();
                         break;
 
-                    case OperationTypes.Lockup:
+                    case WindowsOperationTypes.Lockup:
                         AgrineUI.Practical.Actions.Windows.Base.Lockup();
                         break;
                 }

@@ -1,7 +1,9 @@
 ﻿using AgrineUI.Interfaces;
+using DevComponents.DotNetBar;
 using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.Drawing.Design;
 using System.Drawing.Drawing2D;
 using System.Security.Policy;
 using System.Windows.Forms;
@@ -14,7 +16,10 @@ namespace AgrineUI.Controls
         private IContainer components;
         private Label label1;
         private AgrineUI.Controls.AGButton agButton1;
+        private DevComponents.DotNetBar.LabelX labelX1;
         private AGRichTextBox richtext;
+        private LabelItem _2289;
+
 
         public AGTextBox()
         {
@@ -66,6 +71,36 @@ namespace AgrineUI.Controls
             }
         }
 
+        [DefaultValue("")]
+        [Category("Symbol")]
+        [Description("Indicates the symbol displayed on face of the tile instead of the image. Setting the symbol overrides the image setting.")]
+        [Editor("DevComponents.DotNetBar.Design.SymbolTypeEditor, DevComponents.DotNetBar.Design, Version=14.1.0.37, Culture=neutral,  PublicKeyToken=90f470f34c89ccaf", typeof(UITypeEditor))]
+        public string Symbol
+        {
+            get
+            {
+                return _2289.Symbol;
+            }
+            set
+            {
+                _2289.Symbol = value;
+            }
+        }
+
+        [Category("Symbol")]
+        public Color SymbolColor
+        {
+            get { return this.labelX1.SymbolColor; }
+            set { this.labelX1.SymbolColor = value; }
+        }
+
+        [Category("Symbol")]
+        public float SymbolSize
+        {
+            get { return this.labelX1.SymbolSize; }
+            set { this.labelX1.SymbolSize = value; }
+        }
+
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -90,14 +125,15 @@ namespace AgrineUI.Controls
             this.agAnimator1 = new AgrineUI.Animations.AGAnimator(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.agButton1 = new AgrineUI.Controls.AGButton();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.SuspendLayout();
             // 
             // richtext
             // 
             this.richtext.AcceptsTab = true;
             this.richtext.AGSelectionBackColor = System.Drawing.Color.Crimson;
-            this.richtext.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.richtext.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richtext.BackColor = System.Drawing.Color.White;
             this.richtext.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -109,7 +145,7 @@ namespace AgrineUI.Controls
             this.richtext.Name = "richtext";
             this.richtext.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.richtext.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richtext.Size = new System.Drawing.Size(309, 46);
+            this.richtext.Size = new System.Drawing.Size(284, 46);
             this.richtext.TabIndex = 0;
             this.richtext.Text = "";
             this.richtext.VerticalAlignment = AgrineUI.Controls.VerticalTextAlignment.Center;
@@ -141,12 +177,12 @@ namespace AgrineUI.Controls
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.agAnimator1.SetDecoration(this.label1, AgrineUI.Animations.DecorationType.None);
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(199, 14);
+            this.label1.Location = new System.Drawing.Point(171, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 25);
             this.label1.TabIndex = 2;
@@ -172,9 +208,26 @@ namespace AgrineUI.Controls
             this.agButton1.Visible = false;
             this.agButton1.Click += new System.EventHandler(this.agButton1_Click);
             // 
+            // labelX1
+            // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.agAnimator1.SetDecoration(this.labelX1, AgrineUI.Animations.DecorationType.None);
+            this.labelX1.Location = new System.Drawing.Point(291, 17);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(21, 23);
+            this.labelX1.Symbol = "";
+            this.labelX1.SymbolColor = System.Drawing.Color.Crimson;
+            this.labelX1.SymbolSize = 9F;
+            this.labelX1.TabIndex = 0;
+            this.labelX1.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
             // AGTextBox
             // 
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.labelX1);
             this.Controls.Add(this.agButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richtext);
@@ -211,6 +264,7 @@ namespace AgrineUI.Controls
         {
             this.label1.Location = new Point(this.label1.Location.X, (this.richtext.Size.Height / 2) - 10);
             this.agButton1.Location = new Point(this.agButton1.Location.X, (this.richtext.Size.Height / 2) - 8);
+            this.labelX1.Location = new Point(this.labelX1.Location.X, (this.richtext.Size.Height / 2) - 8);
         }
     }
 

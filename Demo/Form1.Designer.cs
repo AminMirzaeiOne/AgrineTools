@@ -257,7 +257,9 @@
             this.agTextBox1.HolderText = "متن وارد کنید";
             this.agTextBox1.Location = new System.Drawing.Point(503, 326);
             this.agTextBox1.Name = "agTextBox1";
-            this.agTextBox1.Size = new System.Drawing.Size(320, 62);
+            this.agTextBox1.Size = new System.Drawing.Size(320, 54);
+            this.agTextBox1.SymbolColor = System.Drawing.Color.DarkGoldenrod;
+            this.agTextBox1.SymbolSize = 10F;
             this.agTextBox1.TabIndex = 8;
             // 
             // agTextBox2
@@ -273,6 +275,8 @@
             this.agTextBox2.Location = new System.Drawing.Point(454, 407);
             this.agTextBox2.Name = "agTextBox2";
             this.agTextBox2.Size = new System.Drawing.Size(320, 80);
+            this.agTextBox2.SymbolColor = System.Drawing.Color.Crimson;
+            this.agTextBox2.SymbolSize = 9F;
             this.agTextBox2.TabIndex = 9;
             // 
             // agTextBox3
@@ -288,6 +292,8 @@
             this.agTextBox3.Location = new System.Drawing.Point(454, 539);
             this.agTextBox3.Name = "agTextBox3";
             this.agTextBox3.Size = new System.Drawing.Size(253, 42);
+            this.agTextBox3.SymbolColor = System.Drawing.Color.Crimson;
+            this.agTextBox3.SymbolSize = 9F;
             this.agTextBox3.TabIndex = 10;
             // 
             // Form1
