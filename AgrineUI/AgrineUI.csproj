@@ -82,6 +82,9 @@
     <Compile Include="Controls\AGRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\AGRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\AGSwitchButton.cs">
       <SubType>Component</SubType>
     </Compile>

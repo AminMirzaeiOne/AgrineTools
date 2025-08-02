@@ -40,6 +40,9 @@
             this.agRadioButton3 = new AgrineUI.Controls.AGRadioButton();
             this.agCheckBox1 = new AgrineUI.Controls.AGCheckBox();
             this.agCheckBox2 = new AgrineUI.Controls.AGCheckBox();
+            this.agTextBox1 = new AgrineUI.Controls.AGTextBox();
+            this.agTextBox2 = new AgrineUI.Controls.AGTextBox();
+            this.agTextBox3 = new AgrineUI.Controls.AGTextBox();
             this.SuspendLayout();
             // 
             // buttonX1
@@ -242,10 +245,58 @@
             this.agCheckBox2.Text = "agCheckBox1";
             this.agCheckBox2.UseVisualStyleBackColor = false;
             // 
+            // agTextBox1
+            // 
+            this.agTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.agTextBox1.BorderColor = System.Drawing.Color.MediumVioletRed;
+            this.agTextBox1.BorderRadius = ((byte)(20));
+            this.agTextBox1.BorderSize = ((byte)(2));
+            this.agTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.agTextBox1.ForeColor = System.Drawing.Color.White;
+            this.agTextBox1.HolderColor = System.Drawing.Color.DimGray;
+            this.agTextBox1.HolderText = "متن وارد کنید";
+            this.agTextBox1.Location = new System.Drawing.Point(503, 326);
+            this.agTextBox1.Name = "agTextBox1";
+            this.agTextBox1.Size = new System.Drawing.Size(320, 62);
+            this.agTextBox1.TabIndex = 8;
+            // 
+            // agTextBox2
+            // 
+            this.agTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.agTextBox2.BorderColor = System.Drawing.Color.MediumVioletRed;
+            this.agTextBox2.BorderRadius = ((byte)(20));
+            this.agTextBox2.BorderSize = ((byte)(2));
+            this.agTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agTextBox2.ForeColor = System.Drawing.Color.White;
+            this.agTextBox2.HolderColor = System.Drawing.Color.DimGray;
+            this.agTextBox2.HolderText = "عدد وارد کنید";
+            this.agTextBox2.Location = new System.Drawing.Point(454, 407);
+            this.agTextBox2.Name = "agTextBox2";
+            this.agTextBox2.Size = new System.Drawing.Size(320, 80);
+            this.agTextBox2.TabIndex = 9;
+            // 
+            // agTextBox3
+            // 
+            this.agTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.agTextBox3.BorderColor = System.Drawing.Color.MediumVioletRed;
+            this.agTextBox3.BorderRadius = ((byte)(20));
+            this.agTextBox3.BorderSize = ((byte)(2));
+            this.agTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agTextBox3.ForeColor = System.Drawing.Color.White;
+            this.agTextBox3.HolderColor = System.Drawing.Color.Firebrick;
+            this.agTextBox3.HolderText = "کریس رونالدو";
+            this.agTextBox3.Location = new System.Drawing.Point(454, 539);
+            this.agTextBox3.Name = "agTextBox3";
+            this.agTextBox3.Size = new System.Drawing.Size(253, 42);
+            this.agTextBox3.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(835, 667);
+            this.Controls.Add(this.agTextBox3);
+            this.Controls.Add(this.agTextBox2);
+            this.Controls.Add(this.agTextBox1);
             this.Controls.Add(this.agCheckBox2);
             this.Controls.Add(this.agCheckBox1);
             this.Controls.Add(this.agRadioButton3);
@@ -282,6 +333,9 @@
         private AgrineUI.Controls.AGRadioButton agRadioButton3;
         private AgrineUI.Controls.AGCheckBox agCheckBox1;
         private AgrineUI.Controls.AGCheckBox agCheckBox2;
+        private AgrineUI.Controls.AGTextBox agTextBox1;
+        private AgrineUI.Controls.AGTextBox agTextBox2;
+        private AgrineUI.Controls.AGTextBox agTextBox3;
     }
 }
 

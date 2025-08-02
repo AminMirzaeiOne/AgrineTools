@@ -82,7 +82,7 @@ namespace AgrineUI.Animations
                     cp.Style = (int)AGFlags.WindowStyles.WS_POPUP;
                 }
                 ;
-                cp.ExStyle |= (int)AGFlags.WindowStyles.WS_EX_NOACTIVATE | (int)Flags.WindowStyles.WS_EX_TOOLWINDOW;
+                cp.ExStyle |= (int)AGFlags.WindowStyles.WS_EX_NOACTIVATE | (int)AGFlags.WindowStyles.WS_EX_TOOLWINDOW;
                 cp.X = this.Location.X;
                 cp.Y = this.Location.Y;
                 return cp;

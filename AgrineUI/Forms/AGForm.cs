@@ -1,4 +1,5 @@
-﻿using DevComponents.DotNetBar;
+﻿using AgrineUI.Controls;
+using DevComponents.DotNetBar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace AgrineUI.Forms
             this.ThemeCheck();
             this.PaletteCheck();
             this.BackColorCheck();
+            this.ForeColorCheck();
             this.AutoScaleMode = AutoScaleMode.Inherit;
         }
 
@@ -29,6 +31,7 @@ namespace AgrineUI.Forms
             this.ThemeCheck();
             this.PaletteCheck();
             this.BackColorCheck();
+            this.ForeColorCheck();
             this.AutoScaleMode = AutoScaleMode.Inherit;
             this.DarkMode = parentform.DarkMode;
             this.Palette = parentform.Palette;
@@ -41,12 +44,13 @@ namespace AgrineUI.Forms
         public bool DarkMode
         {
             get { return this.darkMode; }
-            set 
-            { 
+            set
+            {
                 this.darkMode = value;
                 this.ThemeCheck();
                 this.PaletteCheck();
                 this.BackColorCheck();
+                this.ForeColorCheck();
             }
         }
 
@@ -61,6 +65,7 @@ namespace AgrineUI.Forms
                 this.ThemeCheck();
                 this.PaletteCheck();
                 this.BackColorCheck();
+                this.ForeColorCheck();
             }
         }
 
@@ -87,12 +92,30 @@ namespace AgrineUI.Forms
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Shapes.AGCircle>().ToList().ForEach(agcircle => agcircle.BorderColor = this.Palette);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGCheckBox>().ToList().ForEach(agcheckbox => agcheckbox.Palette = this.Palette);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGRadioButton>().ToList().ForEach(agradiobutton => agradiobutton.Palette = this.Palette);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGTextBox>().ToList().ForEach(agtextbox => agtextbox.BorderColor = this.Palette);
         }
 
         private void BackColorCheck()
         {
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGCheckBox>().ToList().ForEach(agcheckbox => agcheckbox.BackColor = this.BackColor);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGRadioButton>().ToList().ForEach(agradiobutton => agradiobutton.BackColor = this.BackColor);
+            if (this.DarkMode)
+                GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGTextBox>().ToList().ForEach(agtextbox => agtextbox.BackColor = Color.FromArgb(30, 30, 30));
+            else
+                GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGTextBox>().ToList().ForEach(agtextbox => agtextbox.BackColor = Color.White);
+
+        }
+
+        private void ForeColorCheck()
+        {
+            Color foreColorControls = IsColorDark(this.BackColor) ? Color.White : Color.Black;
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGTextBox>().ToList().ForEach(agtextbox => agtextbox.ForeColor = foreColorControls);
+        }
+
+        private bool IsColorDark(Color color)
+        {
+            double luminance = (0.299 * color.R + 0.587 * color.G + 0.114 * color.B) / 255;
+            return luminance < 0.5;
         }
 
         public System.Collections.Generic.IEnumerable<System.Windows.Forms.Control> GetSelfAndChildrenRecursive(System.Windows.Forms.Control parent)

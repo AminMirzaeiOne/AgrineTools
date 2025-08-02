@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Demo
 {
@@ -16,13 +17,14 @@ namespace Demo
         public Form1()
         {
             InitializeComponent();
+          
         }
+
 
         private void buttonX1_Click(object sender, EventArgs e)
         {
             this.DarkMode = !this.DarkMode;
             this.Palette = Color.Crimson;
-           
         }
 
         private void agButton1_Click(object sender, EventArgs e)
