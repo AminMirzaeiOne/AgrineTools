@@ -74,16 +74,15 @@ namespace AgrineUI.Controls
         [DefaultValue("")]
         [Category("Symbol")]
         [Description("Indicates the symbol displayed on face of the tile instead of the image. Setting the symbol overrides the image setting.")]
-        [Editor("DevComponents.DotNetBar.Design.SymbolTypeEditor, DevComponents.DotNetBar.Design, Version=14.1.0.37, Culture=neutral,  PublicKeyToken=90f470f34c89ccaf", typeof(UITypeEditor))]
         public string Symbol
         {
             get
             {
-                return _2289.Symbol;
+                return this.labelX1.Symbol;
             }
             set
             {
-                _2289.Symbol = value;
+                this.labelX1.Symbol = value;
             }
         }
 
