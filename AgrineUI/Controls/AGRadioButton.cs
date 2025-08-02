@@ -44,7 +44,18 @@ namespace AgrineUI.Controls
             set
             {
                 this.borderSize = value;
-                Invalidate();
+                this.Invalidate();
+            }
+        }
+
+        public override Color BackColor
+        {
+            get { return base.BackColor; }
+            set
+            {
+                base.BackColor = value;
+                this.ForeColor = IsColorDark(value) ? Color.White : Color.Black;
+                this.Invalidate();
             }
         }
 
@@ -144,6 +155,12 @@ namespace AgrineUI.Controls
                 new Point((int)(outerRect.Right + 6), (int)((Height - Font.Height) / 2f)),
                 this.ForeColor
             );
+        }
+
+        private bool IsColorDark(Color color)
+        {
+            double luminance = (0.299 * color.R + 0.587 * color.G + 0.114 * color.B) / 255;
+            return luminance < 0.5;
         }
 
 

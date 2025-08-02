@@ -161,7 +161,7 @@
             this.agRadioButton1.MinimumSize = new System.Drawing.Size(22, 22);
             this.agRadioButton1.Name = "agRadioButton1";
             this.agRadioButton1.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.agRadioButton1.Palette = System.Drawing.Color.YellowGreen;
+            this.agRadioButton1.Palette = System.Drawing.Color.MediumVioletRed;
             this.agRadioButton1.Size = new System.Drawing.Size(204, 32);
             this.agRadioButton1.TabIndex = 6;
             this.agRadioButton1.TabStop = true;
@@ -177,7 +177,7 @@
             this.agRadioButton2.MinimumSize = new System.Drawing.Size(22, 22);
             this.agRadioButton2.Name = "agRadioButton2";
             this.agRadioButton2.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.agRadioButton2.Palette = System.Drawing.Color.YellowGreen;
+            this.agRadioButton2.Palette = System.Drawing.Color.MediumVioletRed;
             this.agRadioButton2.Size = new System.Drawing.Size(204, 32);
             this.agRadioButton2.TabIndex = 6;
             this.agRadioButton2.TabStop = true;
@@ -193,7 +193,7 @@
             this.agRadioButton3.MinimumSize = new System.Drawing.Size(22, 22);
             this.agRadioButton3.Name = "agRadioButton3";
             this.agRadioButton3.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.agRadioButton3.Palette = System.Drawing.Color.YellowGreen;
+            this.agRadioButton3.Palette = System.Drawing.Color.MediumVioletRed;
             this.agRadioButton3.Size = new System.Drawing.Size(204, 32);
             this.agRadioButton3.TabIndex = 6;
             this.agRadioButton3.TabStop = true;
@@ -203,39 +203,43 @@
             // agCheckBox1
             // 
             this.agCheckBox1.AutoSize = true;
+            this.agCheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.agCheckBox1.BorderSize = 2F;
             this.agCheckBox1.BoxSizeMode = AgrineUI.Controls.BoxSizeMode.Large;
+            this.agCheckBox1.ForeColor = System.Drawing.Color.White;
             this.agCheckBox1.Location = new System.Drawing.Point(191, 396);
             this.agCheckBox1.MinimumSize = new System.Drawing.Size(22, 22);
             this.agCheckBox1.Name = "agCheckBox1";
             this.agCheckBox1.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.agCheckBox1.Palette = System.Drawing.Color.Gold;
+            this.agCheckBox1.Palette = System.Drawing.Color.MediumVioletRed;
             this.agCheckBox1.Radius = 7;
             this.agCheckBox1.Size = new System.Drawing.Size(179, 32);
             this.agCheckBox1.TabIndex = 7;
             this.agCheckBox1.Text = "agCheckBox1";
-            this.agCheckBox1.UseVisualStyleBackColor = true;
+            this.agCheckBox1.UseVisualStyleBackColor = false;
             // 
             // agCheckBox2
             // 
             this.agCheckBox2.AutoSize = true;
+            this.agCheckBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.agCheckBox2.BorderSize = 2F;
             this.agCheckBox2.BoxSizeMode = AgrineUI.Controls.BoxSizeMode.Large;
+            this.agCheckBox2.ForeColor = System.Drawing.Color.White;
             this.agCheckBox2.Location = new System.Drawing.Point(191, 448);
             this.agCheckBox2.MinimumSize = new System.Drawing.Size(22, 22);
             this.agCheckBox2.Name = "agCheckBox2";
             this.agCheckBox2.Padding = new System.Windows.Forms.Padding(24, 0, 0, 0);
-            this.agCheckBox2.Palette = System.Drawing.Color.Gold;
+            this.agCheckBox2.Palette = System.Drawing.Color.MediumVioletRed;
             this.agCheckBox2.Radius = 7;
             this.agCheckBox2.Size = new System.Drawing.Size(179, 32);
             this.agCheckBox2.TabIndex = 7;
             this.agCheckBox2.Text = "agCheckBox1";
-            this.agCheckBox2.UseVisualStyleBackColor = true;
+            this.agCheckBox2.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(697, 626);
+            this.ClientSize = new System.Drawing.Size(835, 667);
             this.Controls.Add(this.agCheckBox2);
             this.Controls.Add(this.agCheckBox1);
             this.Controls.Add(this.agRadioButton3);

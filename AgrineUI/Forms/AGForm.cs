@@ -19,6 +19,7 @@ namespace AgrineUI.Forms
             InitializeComponent();
             this.ThemeCheck();
             this.PaletteCheck();
+            this.BackColorCheck();
             this.AutoScaleMode = AutoScaleMode.Inherit;
         }
 
@@ -27,6 +28,7 @@ namespace AgrineUI.Forms
             InitializeComponent();
             this.ThemeCheck();
             this.PaletteCheck();
+            this.BackColorCheck();
             this.AutoScaleMode = AutoScaleMode.Inherit;
             this.DarkMode = parentform.DarkMode;
             this.Palette = parentform.Palette;
@@ -44,6 +46,7 @@ namespace AgrineUI.Forms
                 this.darkMode = value;
                 this.ThemeCheck();
                 this.PaletteCheck();
+                this.BackColorCheck();
             }
         }
 
@@ -57,6 +60,7 @@ namespace AgrineUI.Forms
                 this.palette = value;
                 this.ThemeCheck();
                 this.PaletteCheck();
+                this.BackColorCheck();
             }
         }
 
@@ -81,6 +85,14 @@ namespace AgrineUI.Forms
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGButton>().ToList().ForEach(agbutton => agbutton.BorderColor = this.Palette);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Shapes.AGRectangle>().ToList().ForEach(agrectangle => agrectangle.BorderColor = this.Palette);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Shapes.AGCircle>().ToList().ForEach(agcircle => agcircle.BorderColor = this.Palette);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGCheckBox>().ToList().ForEach(agcheckbox => agcheckbox.Palette = this.Palette);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGRadioButton>().ToList().ForEach(agradiobutton => agradiobutton.Palette = this.Palette);
+        }
+
+        private void BackColorCheck()
+        {
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGCheckBox>().ToList().ForEach(agcheckbox => agcheckbox.BackColor = this.BackColor);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGRadioButton>().ToList().ForEach(agradiobutton => agradiobutton.BackColor = this.BackColor);
         }
 
         public System.Collections.Generic.IEnumerable<System.Windows.Forms.Control> GetSelfAndChildrenRecursive(System.Windows.Forms.Control parent)

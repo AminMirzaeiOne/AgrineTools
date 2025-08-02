@@ -34,7 +34,11 @@ namespace AgrineUI.Controls
         public Color Palette
         {
             get => this.palette;
-            set { this.palette = value; Invalidate(); }
+            set 
+            { 
+                this.palette = value;
+                this.Invalidate();
+            }
         }
 
         [Category("Appearance")]
@@ -56,6 +60,17 @@ namespace AgrineUI.Controls
         {
             get => this.radius;
             set { this.radius = Math.Max(0, value); Invalidate(); }
+        }
+
+        public override Color BackColor
+        {
+            get { return base.BackColor; }
+            set
+            {
+                base.BackColor = value;
+                this.ForeColor = IsColorDark(value) ? Color.White : Color.Black;
+                Invalidate();
+            }
         }
 
         
@@ -213,6 +228,8 @@ namespace AgrineUI.Controls
                 new Point((int)(boxRect.Right + 6), (int)((Height - Font.Height) / 2f)),
                 this.ForeColor
             );
+
+            
         }
 
         protected override void OnResize(EventArgs e)
@@ -226,6 +243,7 @@ namespace AgrineUI.Controls
             double luminance = (0.299 * color.R + 0.587 * color.G + 0.114 * color.B) / 255;
             return luminance < 0.5;
         }
+
 
     }
 }
