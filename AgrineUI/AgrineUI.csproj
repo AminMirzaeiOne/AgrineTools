@@ -147,6 +147,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controls\Advanced\" />
+    <Folder Include="Controls\Foundation\" />
     <Folder Include="Fonts\Letters\" />
     <Folder Include="Fonts\Symbol\" />
     <Folder Include="Icons\" />

@@ -266,20 +266,20 @@
             // 
             this.agTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.agTextBox1.BorderRadius = ((byte)(20));
-            this.agTextBox1.BorderSize = ((byte)(2));
+            this.agTextBox1.BorderSize = ((byte)(3));
             this.agTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.agTextBox1.DarkMode = true;
             this.agTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.agTextBox1.ForeColor = System.Drawing.Color.White;
-            this.agTextBox1.HorizontalTextAlignment = AgrineUI.Abstracts.AGTextBoxBase.AGHorizontalAlignment.Left;
+            this.agTextBox1.HorizontalTextAlignment = AgrineUI.Abstracts.AGTextBoxBase.AGHorizontalAlignment.Right;
             this.agTextBox1.Location = new System.Drawing.Point(560, 363);
             this.agTextBox1.Name = "agTextBox1";
             this.agTextBox1.Orientation = AgrineUI.Abstracts.AGTextBoxBase.TextOrientation.Horizontal;
             this.agTextBox1.Palette = System.Drawing.Color.RoyalBlue;
-            this.agTextBox1.Size = new System.Drawing.Size(186, 65);
+            this.agTextBox1.Size = new System.Drawing.Size(186, 45);
             this.agTextBox1.TabIndex = 12;
             this.agTextBox1.Text = "agTextBox1";
-            this.agTextBox1.VerticalTextAlignment = AgrineUI.Abstracts.AGTextBoxBase.AGVerticalAlignment.Top;
+            this.agTextBox1.VerticalTextAlignment = AgrineUI.Abstracts.AGTextBoxBase.AGVerticalAlignment.Center;
             // 
             // Form1
             // 

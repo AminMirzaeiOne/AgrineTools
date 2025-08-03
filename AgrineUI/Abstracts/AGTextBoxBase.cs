@@ -17,7 +17,9 @@ namespace AgrineUI.Abstracts
     public class AGTextBoxBase : Control, IAGControlTheme
     {
         private Color palette = Color.Tomato;
+        private Color focusColor = Color.FromArgb(180, Color.Tomato);
         private bool darkMode = false;
+        private byte borderSize = 3;
 
         private List<string> _pages = new List<string> { "" };
         private int _currentPageIndex = 0;
@@ -52,7 +54,14 @@ namespace AgrineUI.Abstracts
         }
 
         [Category("Border")]
-        public byte BorderSize { get; set; } = 2;
+        public byte BorderSize
+        {
+            get { return this.borderSize; }
+            set
+            {
+                this.borderSize = value;
+            }
+        }
 
         [Category("Border")]
         public byte BorderRadius { get; set; } = 20;
@@ -74,7 +83,7 @@ namespace AgrineUI.Abstracts
                 else
                 {
                     this.ForeColor = Color.Black;
-                    this.BackColor = Color.White;
+                    this.BackColor = Color.FromArgb(245,245,245);
                 }
             }
         }
@@ -86,6 +95,7 @@ namespace AgrineUI.Abstracts
             set
             {
                 this.palette = value;
+                this.focusColor = Color.FromArgb(180, value);
             }
         }
 
@@ -177,7 +187,7 @@ namespace AgrineUI.Abstracts
             using (GraphicsPath GraphPath = AgrineUI.Practical.Graphics.AGRadius.GetRoundPath(Rect, this.BorderRadius))
             {
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(this.Palette, this.BorderSize))
+                using (Pen pen = new Pen(this.Focused ? this.Palette : this.focusColor, this.BorderSize))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
@@ -349,10 +359,7 @@ namespace AgrineUI.Abstracts
                 }
             }
 
-            if (Focused)
-            {
-                ControlPaint.DrawFocusRectangle(e.Graphics, ClientRectangle);
-            }
+
         }
 
 
