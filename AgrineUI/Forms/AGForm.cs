@@ -76,9 +76,7 @@ namespace AgrineUI.Forms
                 this.BackColor = Color.White;
             }
 
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGCheckBox>().ToList().ForEach(agcheckbox => agcheckbox.DarkMode = this.darkMode);
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGRadioButton>().ToList().ForEach(agradiobutton => agradiobutton.DarkMode = this.darkMode);
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGSwitchButton>().ToList().ForEach(agswitchbutton => agswitchbutton.DarkMode = this.darkMode);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Interfaces.IAGControlTheme>().ToList().ForEach(agcontroltheme => agcontroltheme.DarkMode = this.darkMode);
 
         }
 
@@ -87,10 +85,7 @@ namespace AgrineUI.Forms
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGButton>().ToList().ForEach(agbutton => agbutton.BorderColor = this.Palette);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Shapes.AGRectangle>().ToList().ForEach(agrectangle => agrectangle.BorderColor = this.Palette);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Shapes.AGCircle>().ToList().ForEach(agcircle => agcircle.BorderColor = this.Palette);
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGCheckBox>().ToList().ForEach(agcheckbox => agcheckbox.Palette = this.Palette);
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGRadioButton>().ToList().ForEach(agradiobutton => agradiobutton.Palette = this.Palette);
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGSwitchButton>().ToList().ForEach(agswitchbutton => agswitchbutton.Palette = this.Palette);
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGTextBox>().ToList().ForEach(agtextbox => agtextbox.BorderColor = this.Palette);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Interfaces.IAGControlTheme>().ToList().ForEach(agcontroltheme => agcontroltheme.Palette = this.Palette);
         }
 
         public System.Collections.Generic.IEnumerable<System.Windows.Forms.Control> GetSelfAndChildrenRecursive(System.Windows.Forms.Control parent)
