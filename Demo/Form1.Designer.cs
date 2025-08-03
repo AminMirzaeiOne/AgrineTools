@@ -159,6 +159,7 @@
             this.agRadioButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agRadioButton1.BorderSize = 3F;
             this.agRadioButton1.CircleSizeMode = AgrineUI.Controls.BoxSizeMode.VeryLarge;
+            this.agRadioButton1.DarkMode = false;
             this.agRadioButton1.ForeColor = System.Drawing.Color.White;
             this.agRadioButton1.Location = new System.Drawing.Point(23, 143);
             this.agRadioButton1.MinimumSize = new System.Drawing.Size(22, 22);
@@ -177,6 +178,7 @@
             this.agRadioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agRadioButton2.BorderSize = 3F;
             this.agRadioButton2.CircleSizeMode = AgrineUI.Controls.BoxSizeMode.VeryLarge;
+            this.agRadioButton2.DarkMode = false;
             this.agRadioButton2.ForeColor = System.Drawing.Color.White;
             this.agRadioButton2.Location = new System.Drawing.Point(23, 194);
             this.agRadioButton2.MinimumSize = new System.Drawing.Size(22, 22);
@@ -195,6 +197,7 @@
             this.agRadioButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agRadioButton3.BorderSize = 3F;
             this.agRadioButton3.CircleSizeMode = AgrineUI.Controls.BoxSizeMode.VeryLarge;
+            this.agRadioButton3.DarkMode = false;
             this.agRadioButton3.ForeColor = System.Drawing.Color.White;
             this.agRadioButton3.Location = new System.Drawing.Point(23, 242);
             this.agRadioButton3.MinimumSize = new System.Drawing.Size(22, 22);
@@ -213,7 +216,8 @@
             this.agCheckBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agCheckBox1.BorderSize = 2F;
             this.agCheckBox1.BoxSizeMode = AgrineUI.Controls.BoxSizeMode.Large;
-            this.agCheckBox1.ForeColor = System.Drawing.Color.White;
+            this.agCheckBox1.DarkMode = false;
+            this.agCheckBox1.ForeColor = System.Drawing.Color.Black;
             this.agCheckBox1.Location = new System.Drawing.Point(191, 396);
             this.agCheckBox1.MinimumSize = new System.Drawing.Size(22, 22);
             this.agCheckBox1.Name = "agCheckBox1";
@@ -231,6 +235,7 @@
             this.agCheckBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.agCheckBox2.BorderSize = 2F;
             this.agCheckBox2.BoxSizeMode = AgrineUI.Controls.BoxSizeMode.Large;
+            this.agCheckBox2.DarkMode = false;
             this.agCheckBox2.ForeColor = System.Drawing.Color.White;
             this.agCheckBox2.Location = new System.Drawing.Point(191, 448);
             this.agCheckBox2.MinimumSize = new System.Drawing.Size(22, 22);
@@ -247,6 +252,7 @@
             // 
             this.agSwitchButton1.BorderSize = 1.7F;
             this.agSwitchButton1.DarkMode = true;
+            this.agSwitchButton1.ForeColor = System.Drawing.Color.White;
             this.agSwitchButton1.Location = new System.Drawing.Point(576, 110);
             this.agSwitchButton1.MinimumSize = new System.Drawing.Size(45, 22);
             this.agSwitchButton1.Name = "agSwitchButton1";

@@ -50,7 +50,6 @@ namespace AgrineUI.Controls
             set
             {
                 this.darkMode = value;
-                this.BackColor = this.Parent.BackColor;
                 if (value)
                 {
                     this.ForeColor = Color.White;
