@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgrineUI.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -10,9 +11,10 @@ using System.Windows.Forms;
 
 namespace AgrineUI.Controls
 {
-    public class AGRadioButton : RadioButton
+    public class AGRadioButton : RadioButton, IAGControlTheme
     {
         private Color palette = Color.Tomato;
+        private bool darkMode = false;
         private float borderSize = 2f;
 
         private float animRadius = 0f;
@@ -30,11 +32,30 @@ namespace AgrineUI.Controls
         }
 
 
-        [Category("Appearance")]
+        [Category("Theme")]
         public Color Palette
         {
             get => palette;
             set { palette = value; Invalidate(); }
+        }
+
+        [Category("Theme")]
+        public bool DarkMode
+        {
+            get { return this.darkMode; }
+            set
+            {
+                this.darkMode = value;
+                this.BackColor = this.Parent.BackColor;
+                if (value)
+                {
+                    this.ForeColor = Color.White;
+                }
+                else
+                {
+                    this.ForeColor = Color.Black;
+                }
+            }
         }
 
         [Category("Border Style")]
@@ -44,17 +65,6 @@ namespace AgrineUI.Controls
             set
             {
                 this.borderSize = value;
-                this.Invalidate();
-            }
-        }
-
-        public override Color BackColor
-        {
-            get { return base.BackColor; }
-            set
-            {
-                base.BackColor = value;
-                this.ForeColor = IsColorDark(value) ? Color.White : Color.Black;
                 this.Invalidate();
             }
         }
@@ -81,7 +91,7 @@ namespace AgrineUI.Controls
             }
             else
             {
-                Invalidate(); 
+                Invalidate();
             }
         }
 

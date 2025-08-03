@@ -37,11 +37,13 @@ namespace AgrineUI.Controls
                 {
                     this.offBackColor = Color.FromArgb(60, 60, 60);
                     this.offToggleColor = Color.DarkGray;
+                    this.ForeColor = Color.White;
                 }
                 else
                 {
                     this.offBackColor = Color.Gray;
                     this.offToggleColor = Color.WhiteSmoke;
+                    this.ForeColor = Color.Black;
                 }
             }
         }

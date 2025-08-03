@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgrineUI.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -19,9 +20,10 @@ namespace AgrineUI.Controls
         VeryLarge
     }
 
-    public class AGCheckBox : CheckBox
+    public class AGCheckBox : CheckBox, IAGControlTheme
     {
         private Color palette = Color.Tomato;
+        private bool darkMode = false;
         private float borderSize = 2f;
         private int radius = 4;
         private BoxSizeMode boxSizeMode = BoxSizeMode.Medium;
@@ -30,16 +32,36 @@ namespace AgrineUI.Controls
         private Timer animationTimer;
         private const float animStep = 1.5f;
 
-        [Category("Appearance")]
+        [Category("Theme")]
         public Color Palette
         {
             get => this.palette;
-            set 
-            { 
+            set
+            {
                 this.palette = value;
                 this.Invalidate();
             }
         }
+
+        [Category("Theme")]
+        public bool DarkMode
+        {
+            get { return this.darkMode; }
+            set
+            {
+                this.darkMode = value;
+                this.BackColor = this.Parent.BackColor;
+                if (value)
+                {
+                    this.ForeColor = Color.White;
+                }
+                else
+                {
+                    this.ForeColor= Color.Black;
+                }
+            }
+        }
+
 
         [Category("Appearance")]
         public BoxSizeMode BoxSizeMode
@@ -62,18 +84,7 @@ namespace AgrineUI.Controls
             set { this.radius = Math.Max(0, value); Invalidate(); }
         }
 
-        public override Color BackColor
-        {
-            get { return base.BackColor; }
-            set
-            {
-                base.BackColor = value;
-                this.ForeColor = IsColorDark(value) ? Color.White : Color.Black;
-                Invalidate();
-            }
-        }
 
-        
 
         public AGCheckBox()
         {
@@ -138,7 +149,7 @@ namespace AgrineUI.Controls
             else
             {
                 RectangleF arc = new RectangleF(rect.X, rect.Y, diameter, diameter);
-                path.AddArc(arc, 180, 90); 
+                path.AddArc(arc, 180, 90);
 
                 arc.X = rect.Right - diameter;
                 path.AddArc(arc, 270, 90);
@@ -229,7 +240,7 @@ namespace AgrineUI.Controls
                 this.ForeColor
             );
 
-            
+
         }
 
         protected override void OnResize(EventArgs e)
