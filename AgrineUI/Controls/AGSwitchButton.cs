@@ -7,18 +7,15 @@ using System.Windows.Forms;
 
 namespace AgrineUI.Controls
 {
-    public class AGSwitchButton : CheckBox
+    public class AGSwitchButton : CheckBox, IAGControlTheme
     {
-        private Color onBackColor = Color.MediumSlateBlue;
-        private Color onToggleColor = Color.WhiteSmoke;
+        private Color onBackColor = Color.Tomato;
+        private Color onToggleColor = Color.White;
         private Color offBackColor = Color.Gray;
-        private Color offToggleColor = Color.Gainsboro;
+        private Color offToggleColor = Color.WhiteSmoke;
 
-        private bool solidStyle = true;
-
-        private Color borderColor = Color.Crimson;
-        private float borderThickness = 2f;
-
+        private bool darkMode = false;
+        private float borderSize = 1.7f;
 
         private Timer animationTimer;
         private float animationValue = 0f;
@@ -28,54 +25,42 @@ namespace AgrineUI.Controls
         private bool isAnimatingToChecked;
 
         // Properties
-        [Category("AGSwitch")]
-        public Color OnBackColor
+
+        [Category("Theme")]
+        public bool DarkMode
         {
-            get => onBackColor;
-            set { onBackColor = value; Invalidate(); }
+            get { return this.darkMode; }
+            set
+            {
+                this.darkMode = value;
+                if (value)
+                {
+                    this.offBackColor = Color.FromArgb(60, 60, 60);
+                    this.offToggleColor = Color.DarkGray;
+                }
+                else
+                {
+                    this.offBackColor = Color.Gray;
+                    this.offToggleColor = Color.WhiteSmoke;
+                }
+            }
         }
 
-        [Category("AGSwitch")]
-        public Color OnToggleColor
+        [Category("Theme")]
+        public Color Palette
         {
-            get => onToggleColor;
-            set { onToggleColor = value; Invalidate(); }
+            get { return this.onBackColor; }
+            set
+            {
+                this.onBackColor = value;
+            }
         }
 
-        [Category("AGSwitch")]
-        public Color OffBackColor
-        {
-            get => offBackColor;
-            set { offBackColor = value; Invalidate(); }
-        }
-
-        [Category("AGSwitch")]
-        public Color OffToggleColor
-        {
-            get => offToggleColor;
-            set { offToggleColor = value; Invalidate(); }
-        }
-
-        [Category("AGSwitch")]
-        public Color BorderColor
-        {
-            get => borderColor;
-            set { borderColor = value; Invalidate(); }
-        }
-
-        [Category("AGSwitch")]
+        [Category("Border")]
         public float BorderSize
         {
-            get => borderThickness;
-            set { borderThickness = value; Invalidate(); }
-        }
-
-        [Category("AGSwitch")]
-        [DefaultValue(true)]
-        public bool SolidStyle
-        {
-            get => solidStyle;
-            set { solidStyle = value; Invalidate(); }
+            get => borderSize;
+            set { borderSize = value; Invalidate(); }
         }
 
         [Browsable(false)]
@@ -148,16 +133,14 @@ namespace AgrineUI.Controls
             GraphicsPath path = GetFigurePath();
 
 
-            if (solidStyle)
-            {
-                using (SolidBrush backBrush = new SolidBrush(this.Checked ? onBackColor : offBackColor))
-                    pevent.Graphics.FillPath(backBrush, path);
-            }
-            else
-            {
-                using (Pen borderPen = new Pen(this.Checked ? onBackColor : offBackColor, 2))
-                    pevent.Graphics.DrawPath(borderPen, path);
-            }
+
+            using (SolidBrush backBrush = new SolidBrush(this.Checked ? onBackColor : offBackColor))
+                pevent.Graphics.FillPath(backBrush, path);
+
+            using (Pen borderPen = new Pen(this.onBackColor, this.BorderSize))
+                pevent.Graphics.DrawPath(borderPen, path);
+
+
 
             float toggleXPos = 2 + (this.Width - this.Height) * animationValue;
             using (SolidBrush toggleBrush = new SolidBrush(this.Checked ? onToggleColor : offToggleColor))
@@ -166,14 +149,8 @@ namespace AgrineUI.Controls
                     new RectangleF(toggleXPos, 2, toggleSize, toggleSize));
             }
 
-            if (borderThickness > 0)
-            {
-                using (Pen borderPen = new Pen(borderColor, borderThickness))
-                {
-                    borderPen.Alignment = PenAlignment.Inset;
-                    pevent.Graphics.DrawPath(borderPen, path);
-                }
-            }
+
+
         }
 
         private GraphicsPath GetFigurePath()

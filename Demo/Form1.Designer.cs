@@ -245,15 +245,12 @@
             // 
             // agSwitchButton1
             // 
-            this.agSwitchButton1.BorderColor = System.Drawing.Color.Crimson;
-            this.agSwitchButton1.BorderSize = 2F;
+            this.agSwitchButton1.BorderSize = 1.7F;
+            this.agSwitchButton1.DarkMode = true;
             this.agSwitchButton1.Location = new System.Drawing.Point(576, 110);
             this.agSwitchButton1.MinimumSize = new System.Drawing.Size(45, 22);
             this.agSwitchButton1.Name = "agSwitchButton1";
-            this.agSwitchButton1.OffBackColor = System.Drawing.SystemColors.GrayText;
-            this.agSwitchButton1.OffToggleColor = System.Drawing.Color.GhostWhite;
-            this.agSwitchButton1.OnBackColor = System.Drawing.Color.Crimson;
-            this.agSwitchButton1.OnToggleColor = System.Drawing.Color.White;
+            this.agSwitchButton1.Palette = System.Drawing.Color.Crimson;
             this.agSwitchButton1.Size = new System.Drawing.Size(56, 29);
             this.agSwitchButton1.TabIndex = 11;
             this.agSwitchButton1.UseVisualStyleBackColor = true;
