@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AgrineUI.Controls
+namespace AgrineUI.Controls.Foundation
 {
     public enum BoxSizeMode
     {

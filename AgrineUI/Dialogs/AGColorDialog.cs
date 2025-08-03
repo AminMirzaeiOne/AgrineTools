@@ -13,23 +13,23 @@ namespace AgrineUI.Dialogs
             this.InitializeComponent();
         }
 
-        private Controls.AGButton agButton2;
+        private AgrineUI.Controls.Foundation.AGButton agButton2;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
-        private Controls.AGButton agButton3;
+        private AgrineUI.Controls.Foundation.AGButton agButton3;
         private DevComponents.DotNetBar.ScrollBar.HScrollBarAdv hScrollBarAdv1;
         private System.Windows.Forms.Label label1;
-        private Controls.AGButton agButton1;
+        private AgrineUI.Controls.Foundation.AGButton agButton1;
 
         private void InitializeComponent()
         {
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.agButton2 = new AgrineUI.Controls.AGButton();
-            this.agButton3 = new AgrineUI.Controls.AGButton();
-            this.agButton1 = new AgrineUI.Controls.AGButton();
+            this.agButton2 = new AgrineUI.Controls.Foundation.AGButton();
+            this.agButton3 = new AgrineUI.Controls.Foundation.AGButton();
+            this.agButton1 = new AgrineUI.Controls.Foundation.AGButton();
             this.hScrollBarAdv1 = new DevComponents.DotNetBar.ScrollBar.HScrollBarAdv();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();

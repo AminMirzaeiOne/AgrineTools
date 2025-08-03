@@ -76,22 +76,25 @@
     <Compile Include="Components\AGThemeManageer.Designer.cs">
       <DependentUpon>AGThemeManageer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\AGButton.cs">
+    <Compile Include="Controls\Advanced\AGToolStripMenuItem.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\AGCheckBox.cs">
+    <Compile Include="Controls\Foundation\AGButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\AGRadioButton.cs">
+    <Compile Include="Controls\Foundation\AGCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\AGRichTextBox.cs">
+    <Compile Include="Controls\Foundation\AGRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\AGSwitchButton.cs">
+    <Compile Include="Controls\Foundation\AGRichTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\AGTextBox.cs">
+    <Compile Include="Controls\Foundation\AGSwitchButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Foundation\AGTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Dialogs\AGColorDialog.cs">
@@ -147,8 +150,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\Advanced\" />
-    <Folder Include="Controls\Foundation\" />
     <Folder Include="Fonts\Letters\" />
     <Folder Include="Fonts\Symbol\" />
     <Folder Include="Icons\" />

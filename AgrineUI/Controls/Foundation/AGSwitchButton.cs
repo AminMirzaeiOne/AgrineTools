@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace AgrineUI.Controls
+namespace AgrineUI.Controls.Foundation
 {
     public class AGSwitchButton : CheckBox, IAGControlTheme
     {

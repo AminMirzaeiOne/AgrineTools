@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AgrineUI.Controls
+namespace AgrineUI.Controls.Foundation
 {
     public class AGButton : DevComponents.DotNetBar.ButtonX, AgrineUI.Interfaces.IAGControlBorder
     {

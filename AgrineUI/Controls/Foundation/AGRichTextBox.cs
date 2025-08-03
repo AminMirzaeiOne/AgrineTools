@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace AgrineUI.Controls
+namespace AgrineUI.Controls.Foundation
 {
     public enum VerticalTextAlignment
     {

@@ -82,7 +82,7 @@ namespace AgrineUI.Forms
 
         private void PaletteCheck()
         {
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.AGButton>().ToList().ForEach(agbutton => agbutton.BorderColor = this.Palette);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.Foundation.AGButton>().ToList().ForEach(agbutton => agbutton.BorderColor = this.Palette);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Shapes.AGRectangle>().ToList().ForEach(agrectangle => agrectangle.BorderColor = this.Palette);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Shapes.AGCircle>().ToList().ForEach(agcircle => agcircle.BorderColor = this.Palette);
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Interfaces.IAGControlTheme>().ToList().ForEach(agcontroltheme => agcontroltheme.Palette = this.Palette);
