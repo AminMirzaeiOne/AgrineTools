@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\AGFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Abstracts\AGTextBoxBase.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -118,6 +121,12 @@
     <Compile Include="Forms\AGFormSplash.Designer.cs">
       <DependentUpon>AGFormSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Foundation\AGForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Foundation\AGForm2.Designer.cs">
+      <DependentUpon>AGForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\IAGControlBorder.cs" />
     <Compile Include="Interfaces\IAGControlTheme.cs" />
     <Compile Include="Interfaces\IAGShape.cs" />
@@ -152,10 +161,14 @@
   <ItemGroup>
     <Folder Include="Fonts\Letters\" />
     <Folder Include="Fonts\Symbol\" />
+    <Folder Include="Forms\Advanced\" />
     <Folder Include="Messages\" />
     <Folder Include="Sounds\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Abstracts\AGFormBase.resx">
+      <DependentUpon>AGFormBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\AGColorDialog.resx">
       <DependentUpon>AGColorDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AGFormSplash.resx">
       <DependentUpon>AGFormSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Foundation\AGForm2.resx">
+      <DependentUpon>AGForm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shapes\Foundation\AGCircle.resx">
       <DependentUpon>AGCircle.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace Demo
 {
-    partial class Form1
+    partial class StartForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,22 +30,16 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // StartForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(796, 470);
-            this.DarkMode = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
-            this.Palette = System.Drawing.Color.DeepPink;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ClientSize = new System.Drawing.Size(933, 516);
+            this.Name = "StartForm";
+            this.Text = "StartForm";
             this.ResumeLayout(false);
 
         }
 
-
         #endregion
     }
 }
-
