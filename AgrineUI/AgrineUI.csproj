@@ -162,6 +162,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controls\Partial\" />
     <Folder Include="Fonts\Letters\" />
     <Folder Include="Fonts\Symbol\" />
     <Folder Include="Forms\Advanced\" />
