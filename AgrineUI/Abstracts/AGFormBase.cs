@@ -29,6 +29,7 @@ namespace AgrineUI.Abstracts
         public AGFormBase()
         {
             this.InitializeComponent();
+            this.Padding = new Padding(BorderSize+3);
         }
 
         protected override void OnPaint(PaintEventArgs e)

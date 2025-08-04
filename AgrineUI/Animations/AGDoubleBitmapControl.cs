@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ using static AgrineUI.Components.AGAnimator;
 
 namespace AgrineUI.Animations
 {
+    [ToolboxItem(false)]
     internal partial class AGDoubleBitmapControl : System.Windows.Forms.Control, IFakeControl
     {
         Bitmap bgBmp;

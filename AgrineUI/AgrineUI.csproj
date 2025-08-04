@@ -82,6 +82,9 @@
     <Compile Include="Controls\Advanced\AGToolStripMenuItem.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\Advanced\AGUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\Foundation\AGButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -102,6 +105,9 @@
     </Compile>
     <Compile Include="Controls\Foundation\AGTextBox.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Partial\AGFormControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Dialogs\AGColorDialog.cs">
       <SubType>Form</SubType>
@@ -162,7 +168,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\Partial\" />
     <Folder Include="Fonts\Letters\" />
     <Folder Include="Fonts\Symbol\" />
     <Folder Include="Forms\Advanced\" />
@@ -172,6 +177,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Abstracts\AGFormBase.resx">
       <DependentUpon>AGFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Partial\AGFormControl.resx">
+      <DependentUpon>AGFormControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\AGColorDialog.resx">
       <DependentUpon>AGColorDialog.cs</DependentUpon>
