@@ -118,11 +118,6 @@
     <Compile Include="Forms\AGFormSplash.Designer.cs">
       <DependentUpon>AGFormSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="Icons\Internal\IconControls.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IconControls.resx</DependentUpon>
-    </Compile>
     <Compile Include="Interfaces\IAGControlBorder.cs" />
     <Compile Include="Interfaces\IAGControlTheme.cs" />
     <Compile Include="Interfaces\IAGShape.cs" />
@@ -170,10 +165,6 @@
     <EmbeddedResource Include="Forms\AGFormSplash.resx">
       <DependentUpon>AGFormSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Icons\Internal\IconControls.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>IconControls.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Shapes\Foundation\AGCircle.resx">
       <DependentUpon>AGCircle.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +177,9 @@
     <EmbeddedResource Include="Shapes\Foundation\AGTriangle.resx">
       <DependentUpon>AGTriangle.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\Internal\AGSB_Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

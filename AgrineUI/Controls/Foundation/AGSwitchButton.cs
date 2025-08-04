@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 namespace AgrineUI.Controls.Foundation
 {
+    [ToolboxBitmap(typeof(AGSwitchButton), "AgrineUI.Icons.Internal.AGSB_Icon.ico")]
     public class AGSwitchButton : CheckBox, IAGControlTheme
     {
         private Color onBackColor = Color.Tomato;

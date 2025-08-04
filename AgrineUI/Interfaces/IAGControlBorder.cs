@@ -12,7 +12,5 @@ namespace AgrineUI.Interfaces
         byte BorderSize { get; set; }
 
         byte BorderRadius { get; set; }
-
-        System.Drawing.Color BorderColor { get; set; }
     }
 }

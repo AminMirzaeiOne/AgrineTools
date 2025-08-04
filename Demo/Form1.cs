@@ -1,4 +1,5 @@
-﻿using AgrineUI.Interfaces;
+﻿using AgrineUI.Controls.Foundation;
+using AgrineUI.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,20 +18,21 @@ namespace Demo
         public Form1()
         {
             InitializeComponent();
-            
         }
 
-
-        private void buttonX1_Click(object sender, EventArgs e)
+        private void agButton1_Click_1(object sender, EventArgs e)
         {
-            this.DarkMode = !this.DarkMode;
-            this.Palette = Color.Crimson;
+            var resources = typeof(AGSwitchButton).Assembly.GetManifestResourceNames();
+            foreach (var name in resources)
+            {
+                System.Diagnostics.Debug.WriteLine(name);
+            }
+
         }
 
-        private void agButton1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            AgrineUI.Forms.AGForm aG = new AgrineUI.Forms.AGForm(this);
-            aG.Show();
+
         }
     }
 }

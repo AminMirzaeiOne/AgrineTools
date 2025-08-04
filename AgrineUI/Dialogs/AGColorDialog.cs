@@ -130,16 +130,13 @@ namespace AgrineUI.Dialogs
             // 
             this.agButton2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.agButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.agButton2.BorderColor = System.Drawing.Color.Tomato;
             this.agButton2.BorderRadius = ((byte)(20));
             this.agButton2.BorderSize = ((byte)(2));
-            this.agButton2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.agButton2.DefaultButton = false;
             this.agButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agButton2.Location = new System.Drawing.Point(520, 457);
             this.agButton2.Name = "agButton2";
             this.agButton2.Size = new System.Drawing.Size(130, 55);
-            this.agButton2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.agButton2.TabIndex = 0;
             this.agButton2.Text = "لغو";
             // 
@@ -147,16 +144,13 @@ namespace AgrineUI.Dialogs
             // 
             this.agButton3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.agButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.agButton3.BorderColor = System.Drawing.Color.Tomato;
             this.agButton3.BorderRadius = ((byte)(20));
             this.agButton3.BorderSize = ((byte)(2));
-            this.agButton3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.agButton3.DefaultButton = false;
             this.agButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
             this.agButton3.Location = new System.Drawing.Point(516, 319);
             this.agButton3.Name = "agButton3";
             this.agButton3.Size = new System.Drawing.Size(282, 45);
-            this.agButton3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.agButton3.TabIndex = 0;
             this.agButton3.Text = "افزودن رنگ سفارشی";
             // 
@@ -164,7 +158,6 @@ namespace AgrineUI.Dialogs
             // 
             this.agButton1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.agButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.agButton1.BorderColor = System.Drawing.Color.Tomato;
             this.agButton1.BorderRadius = ((byte)(20));
             this.agButton1.BorderSize = ((byte)(2));
             this.agButton1.DefaultButton = true;
@@ -172,7 +165,6 @@ namespace AgrineUI.Dialogs
             this.agButton1.Location = new System.Drawing.Point(668, 457);
             this.agButton1.Name = "agButton1";
             this.agButton1.Size = new System.Drawing.Size(130, 55);
-            this.agButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.agButton1.TabIndex = 0;
             this.agButton1.Text = "انتخاب";
             // 
