@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgrineUI.Animations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -9,7 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AgrineUI.Animations
+namespace AgrineUI.Components
 {
     /// <summary>
     /// Animation manager
@@ -17,6 +18,7 @@ namespace AgrineUI.Animations
     [ProvideProperty("Decoration", typeof(System.Windows.Forms.Control))]
     public class AGAnimator : Component, IExtenderProvider
     {
+
         IContainer components = null;
         protected List<QueueItem> queue = new List<QueueItem>();
         private Thread thread;
@@ -722,69 +724,62 @@ namespace AgrineUI.Animations
         #endregion
 
 
-
-
-
-
-    }
-
-    public enum DecorationType
-    {
-        None,
-        BottomMirror,
-        Custom
-    }
-
-    public class AnimationCompletedEventArg : EventArgs
-    {
-        public AGAnimation Animation { get; set; }
-        public Control Control { get; internal set; }
-        public AnimateMode Mode { get; internal set; }
-    }
-
-    public class TransfromNeededEventArg : EventArgs
-    {
-        public TransfromNeededEventArg()
+        public enum DecorationType
         {
-            Matrix = new Matrix(1, 0, 0, 1, 0, 0);
+            None,
+            BottomMirror,
+            Custom
         }
 
-        public Matrix Matrix { get; set; }
-        public float CurrentTime { get; internal set; }
-        public Rectangle ClientRectangle { get; internal set; }
-        public Rectangle ClipRectangle { get; internal set; }
-        public AGAnimation Animation { get; set; }
-        public Control Control { get; internal set; }
-        public AnimateMode Mode { get; internal set; }
-        public bool UseDefaultMatrix { get; set; }
+        public class AnimationCompletedEventArg : EventArgs
+        {
+            public AGAnimation Animation { get; set; }
+            public Control Control { get; internal set; }
+            public AnimateMode Mode { get; internal set; }
+        }
+
+        public class TransfromNeededEventArg : EventArgs
+        {
+            public TransfromNeededEventArg()
+            {
+                Matrix = new Matrix(1, 0, 0, 1, 0, 0);
+            }
+
+            public Matrix Matrix { get; set; }
+            public float CurrentTime { get; internal set; }
+            public Rectangle ClientRectangle { get; internal set; }
+            public Rectangle ClipRectangle { get; internal set; }
+            public AGAnimation Animation { get; set; }
+            public Control Control { get; internal set; }
+            public AnimateMode Mode { get; internal set; }
+            public bool UseDefaultMatrix { get; set; }
+        }
+
+        public class NonLinearTransfromNeededEventArg : EventArgs
+        {
+            public float CurrentTime { get; internal set; }
+
+            public Rectangle ClientRectangle { get; internal set; }
+            public byte[] Pixels { get; internal set; }
+            public int Stride { get; internal set; }
+
+            public Rectangle SourceClientRectangle { get; internal set; }
+            public byte[] SourcePixels { get; internal set; }
+            public int SourceStride { get; set; }
+
+            public AGAnimation Animation { get; set; }
+            public Control Control { get; internal set; }
+            public AnimateMode Mode { get; internal set; }
+            public bool UseDefaultTransform { get; set; }
+        }
+
+        public enum AnimateMode
+        {
+            Show,
+            Hide,
+            Update,
+            BeginUpdate
+        }
+
     }
-
-    public class NonLinearTransfromNeededEventArg : EventArgs
-    {
-        public float CurrentTime { get; internal set; }
-
-        public Rectangle ClientRectangle { get; internal set; }
-        public byte[] Pixels { get; internal set; }
-        public int Stride { get; internal set; }
-
-        public Rectangle SourceClientRectangle { get; internal set; }
-        public byte[] SourcePixels { get; internal set; }
-        public int SourceStride { get; set; }
-
-        public AGAnimation Animation { get; set; }
-        public Control Control { get; internal set; }
-        public AnimateMode Mode { get; internal set; }
-        public bool UseDefaultTransform { get; set; }
-    }
-
-    public enum AnimateMode
-    {
-        Show,
-        Hide,
-        Update,
-        BeginUpdate
-    }
-
-
-
 }

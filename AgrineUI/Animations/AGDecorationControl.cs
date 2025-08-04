@@ -7,10 +7,11 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static AgrineUI.Components.AGAnimator;
 
 namespace AgrineUI.Animations
 {
-    public class AGDecorationControl : System.Windows.Forms.UserControl
+    internal class AGDecorationControl : System.Windows.Forms.UserControl
     {
         private System.Windows.Forms.Timer tm;
         private bool isSnapshotNow = false;

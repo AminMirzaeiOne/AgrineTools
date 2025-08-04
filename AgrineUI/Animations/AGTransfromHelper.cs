@@ -5,15 +5,16 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static AgrineUI.Components.AGAnimator;
 
 namespace AgrineUI.Animations
 {
-    public class AGTransfromHelper
+    internal class AGTransfromHelper
     {
         const int bytesPerPixel = 4;
         static Random rnd = new Random();
 
-        public static void DoScale(TransfromNeededEventArg e, AGAnimation animation)
+        internal static void DoScale(TransfromNeededEventArg e, AGAnimation animation)
         {
             var rect = e.ClientRectangle;
             var center = new PointF(rect.Left + rect.Width / 2, rect.Top + rect.Height / 2);

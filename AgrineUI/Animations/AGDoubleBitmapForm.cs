@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static AgrineUI.Components.AGAnimator;
 
 namespace AgrineUI.Animations
 {
-    public class AGDoubleBitmapForm : System.Windows.Forms.Form, IFakeControl
+    internal class AGDoubleBitmapForm : System.Windows.Forms.Form, IFakeControl
     {
         Bitmap bgBmp;
         Bitmap frame;

@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace AgrineUI.Animations
 {
-    public class AGPointFConverter : ExpandableObjectConverter
+    internal class AGPointFConverter : ExpandableObjectConverter
     {
         /// <summary>
         /// Creates a new instance of PointFConverter
         /// </summary>
-        public AGPointFConverter()
+        internal AGPointFConverter()
         {
         }
 

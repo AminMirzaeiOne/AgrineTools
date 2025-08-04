@@ -54,9 +54,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Animations\AGAnimation.cs" />
-    <Compile Include="Animations\AGAnimator.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Animations\AGController.cs" />
     <Compile Include="Animations\AGDecorationControl.cs">
       <SubType>UserControl</SubType>
@@ -70,6 +67,9 @@
     <Compile Include="Animations\AGFlags.cs" />
     <Compile Include="Animations\AGPointFConverter.cs" />
     <Compile Include="Animations\AGTransfromHelper.cs" />
+    <Compile Include="Components\AGAnimator.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Components\AGThemeManageer.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -85,16 +85,10 @@
     <Compile Include="Controls\Foundation\AGCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\Foundation\AGComboBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Controls\Foundation\AGContextMenustrip.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\Foundation\AGRadioButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\Foundation\AGRichTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\Foundation\AGSwitchButton.cs">

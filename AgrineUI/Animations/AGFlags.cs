@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AgrineUI.Animations
 {
-    public static class AGFlags
+    internal static class AGFlags
     {
 
         [Flags]
