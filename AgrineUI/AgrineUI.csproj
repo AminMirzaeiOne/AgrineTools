@@ -91,6 +91,9 @@
     <Compile Include="Controls\Foundation\AGContextMenustrip.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\Foundation\AGPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\Foundation\AGRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
