@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AgrineUI.Shapes
+namespace AgrineUI.Shapes.Foundation
 {
-    public partial class AGLogo : UserControl
+    public partial class AGTriangle : UserControl
     {
-        public AGLogo()
+        public AGTriangle()
         {
             InitializeComponent();
         }

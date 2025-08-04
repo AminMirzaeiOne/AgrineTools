@@ -1,6 +1,6 @@
-﻿namespace AgrineUI.Shapes
+﻿namespace AgrineUI.Shapes.Advanced
 {
-    partial class AGCircle
+    partial class AGLogo
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,13 +30,11 @@
         {
             this.SuspendLayout();
             // 
-            // AGCircle
+            // AgrineLogo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackColor = System.Drawing.Color.White;
-            this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "AGCircle";
-            this.Size = new System.Drawing.Size(200, 200);
+            this.Name = "AgrineLogo";
+            this.Size = new System.Drawing.Size(325, 301);
             this.ResumeLayout(false);
 
         }

@@ -14,7 +14,7 @@ using System.Windows.Forms;
 namespace AgrineUI.Abstracts
 {
 
-    public class AGTextBoxBase : Control, IAGControlTheme
+    public abstract class AGTextBoxBase : Control, IAGControlTheme
     {
         private Color palette = Color.Tomato;
         private Color focusColor = Color.FromArgb(180, Color.Tomato);

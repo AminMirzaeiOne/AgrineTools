@@ -1,6 +1,6 @@
-﻿namespace AgrineUI.Shapes
+﻿namespace AgrineUI.Shapes.Foundation
 {
-    partial class AGTriangle
+    partial class AGCircle
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,11 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // AGTriangle
+            // AGCircle
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.Name = "AGTriangle";
-            this.Size = new System.Drawing.Size(296, 270);
+            this.BackColor = System.Drawing.Color.White;
+            this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "AGCircle";
+            this.Size = new System.Drawing.Size(200, 200);
             this.ResumeLayout(false);
 
         }

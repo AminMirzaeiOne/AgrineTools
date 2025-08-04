@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace AgrineUI.Components
 {
-    public partial class AGThemeManageer : Component
+    public partial class AGThemeManage : Component
     {
-        public AGThemeManageer()
+        public AGThemeManage()
         {
             InitializeComponent();
         }
 
-        public AGThemeManageer(IContainer container)
+        public AGThemeManage(IContainer container)
         {
             container.Add(this);
 

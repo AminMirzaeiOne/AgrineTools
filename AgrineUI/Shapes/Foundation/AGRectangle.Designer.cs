@@ -1,8 +1,8 @@
-﻿namespace AgrineUI.Components
+﻿namespace AgrineUI.Shapes.Foundation
 {
-    partial class AGThemeManageer
+    partial class AGRectangle
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
@@ -22,13 +22,23 @@
 
         #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // AGRectangle
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.Color.White;
+            this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "AGRectangle";
+            this.Size = new System.Drawing.Size(319, 146);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

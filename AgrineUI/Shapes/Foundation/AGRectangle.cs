@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AgrineUI.Shapes
+namespace AgrineUI.Shapes.Foundation
 {
     public partial class AGRectangle : UserControl
     {

@@ -70,11 +70,11 @@
     <Compile Include="Components\AGAnimator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Components\AGThemeManageer.cs">
+    <Compile Include="Components\AGThemeManage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Components\AGThemeManageer.Designer.cs">
-      <DependentUpon>AGThemeManageer.cs</DependentUpon>
+    <Compile Include="Components\AGThemeManage.Designer.cs">
+      <DependentUpon>AGThemeManage.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Advanced\AGToolStripMenuItem.cs">
       <SubType>Component</SubType>
@@ -118,41 +118,45 @@
     <Compile Include="Forms\AGFormSplash.Designer.cs">
       <DependentUpon>AGFormSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Icons\Internal\IconControls.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconControls.resx</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\IAGControlBorder.cs" />
     <Compile Include="Interfaces\IAGControlTheme.cs" />
     <Compile Include="Interfaces\IAGShape.cs" />
     <Compile Include="Practical\Actions\Windows.cs" />
     <Compile Include="Practical\Graphics\AGRadius.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shapes\AGCircle.cs">
+    <Compile Include="Shapes\Foundation\AGCircle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Shapes\AGCircle.Designer.cs">
+    <Compile Include="Shapes\Foundation\AGCircle.Designer.cs">
       <DependentUpon>AGCircle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shapes\AGRectangle.cs">
+    <Compile Include="Shapes\Foundation\AGRectangle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Shapes\AGRectangle.Designer.cs">
+    <Compile Include="Shapes\Foundation\AGRectangle.Designer.cs">
       <DependentUpon>AGRectangle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shapes\AGLogo.cs">
+    <Compile Include="Shapes\Advanced\AGLogo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Shapes\AGLogo.Designer.cs">
+    <Compile Include="Shapes\Advanced\AGLogo.Designer.cs">
       <DependentUpon>AGLogo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shapes\AGTriangle.cs">
+    <Compile Include="Shapes\Foundation\AGTriangle.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Shapes\AGTriangle.Designer.cs">
+    <Compile Include="Shapes\Foundation\AGTriangle.Designer.cs">
       <DependentUpon>AGTriangle.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\Letters\" />
     <Folder Include="Fonts\Symbol\" />
-    <Folder Include="Icons\" />
     <Folder Include="Messages\" />
     <Folder Include="Sounds\" />
   </ItemGroup>
@@ -166,16 +170,20 @@
     <EmbeddedResource Include="Forms\AGFormSplash.resx">
       <DependentUpon>AGFormSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shapes\AGCircle.resx">
+    <EmbeddedResource Include="Icons\Internal\IconControls.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IconControls.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shapes\Foundation\AGCircle.resx">
       <DependentUpon>AGCircle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shapes\AGRectangle.resx">
+    <EmbeddedResource Include="Shapes\Foundation\AGRectangle.resx">
       <DependentUpon>AGRectangle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shapes\AGLogo.resx">
+    <EmbeddedResource Include="Shapes\Advanced\AGLogo.resx">
       <DependentUpon>AGLogo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shapes\AGTriangle.resx">
+    <EmbeddedResource Include="Shapes\Foundation\AGTriangle.resx">
       <DependentUpon>AGTriangle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
