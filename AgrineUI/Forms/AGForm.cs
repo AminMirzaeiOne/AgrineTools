@@ -77,15 +77,15 @@ namespace AgrineUI.Forms
             }
 
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Interfaces.IAGControlTheme>().ToList().ForEach(agcontroltheme => agcontroltheme.DarkMode = this.darkMode);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Interfaces.IAGShape>().ToList().ForEach(agshapetheme => agshapetheme.DarkMode = this.darkMode);
 
         }
 
         private void PaletteCheck()
         {
             GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Controls.Foundation.AGButton>().ToList().ForEach(agbutton => agbutton.BorderColor = this.Palette);
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Shapes.AGRectangle>().ToList().ForEach(agrectangle => agrectangle.BorderColor = this.Palette);
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Shapes.AGCircle>().ToList().ForEach(agcircle => agcircle.BorderColor = this.Palette);
-            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Interfaces.IAGControlTheme>().ToList().ForEach(agcontroltheme => agcontroltheme.Palette = this.Palette);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Interfaces.IAGShape>().ToList().ForEach(agshapepalette => agshapepalette.Palette = this.Palette);
+            GetSelfAndChildrenRecursive(this).OfType<AgrineUI.Interfaces.IAGControlTheme>().ToList().ForEach(agcontrolpalette => agcontrolpalette.Palette = this.Palette);
         }
 
         public System.Collections.Generic.IEnumerable<System.Windows.Forms.Control> GetSelfAndChildrenRecursive(System.Windows.Forms.Control parent)
@@ -100,6 +100,13 @@ namespace AgrineUI.Forms
             controls.Add(parent);
 
             return controls;
+        }
+
+        public override void Refresh()
+        {
+            base.Refresh();
+            this.ThemeCheck();
+            this.PaletteCheck();
         }
 
     }

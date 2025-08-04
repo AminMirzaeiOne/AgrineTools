@@ -19,12 +19,52 @@ namespace AgrineUI.Shapes
             InitializeComponent();
         }
 
+        private Color palette = Color.Tomato;
+        private bool darkMode = false;
+
+        [Category("Theme")]
+        public bool AgreeTheme { get; set; } = true;
+
+
+        [Category("Theme")]
+        public bool DarkMode
+        {
+            get { return this.darkMode; }
+            set
+            {
+                this.darkMode = value;
+                if (this.AgreeTheme)
+                {
+                    if (value)
+                    {
+                        this.BackColor = Color.FromArgb(40, 40, 40);
+                    }
+                    else
+                    {
+                        this.BackColor = Color.FromArgb(244, 245, 245);
+                    }
+                }
+                
+            }
+        }
+
+        [Category("Theme")]
+        public Color Palette
+        {
+            get { return this.palette; }
+            set
+            {
+                this.palette = value;
+                if (this.AgreeTheme)
+                    this.BorderColor = value;
+            }
+        }
+
         [Category("Border")]
         public byte BorderSize { get; set; } = 2;
 
         [Category("Border")]
         public System.Drawing.Color BorderColor { get; set; } = System.Drawing.Color.Tomato;
-        public bool AgreeTheme { get; set; } = false;
 
         protected override void OnPaint(PaintEventArgs e)
         {

@@ -85,6 +85,12 @@
     <Compile Include="Controls\Foundation\AGCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\Foundation\AGComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Foundation\AGContextMenustrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\Foundation\AGRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
