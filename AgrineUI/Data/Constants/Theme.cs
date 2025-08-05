@@ -11,8 +11,12 @@ namespace AgrineUI.Data.Constants
     {
         public static class Buttons
         {
-            public static int DarkForeColor = Color.White.ToArgb();
-            public static int DarkBackColor = Color.FromArgb(20,20,20).ToArgb();
+            public static readonly Color DarkForeColor = Color.White;
+            public static readonly Color DarkBackColor = Color.FromArgb(20,20,20);
+
+            public static readonly Color LightForeColor = Color.Black;
+            public static readonly Color LightBackColor = Color.FromArgb(230, 230, 230);
+
         }
     }
 }

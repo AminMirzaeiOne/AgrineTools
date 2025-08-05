@@ -10,9 +10,9 @@ namespace AgrineUI.Data.Constants
 {
     public static class Sound
     {
-        public static class Buttons
+        public class Buttons
         {
-            public static Stream ASoundClick = Assembly.GetExecutingAssembly().GetManifestResourceStream("AgrineUI.Sounds.AGButton.Click_Sound1.wav");
+            public readonly Stream ASoundClick = Assembly.GetExecutingAssembly().GetManifestResourceStream("AgrineUI.Sounds.AGButton.ASound_Click.wav");
         }
     }
 }

@@ -118,9 +118,12 @@
     <Compile Include="Controls\Partial\AGFormControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Data\Constants\Animation.cs" />
     <Compile Include="Data\Constants\Icon.cs" />
     <Compile Include="Data\Constants\Sound.cs" />
     <Compile Include="Data\Constants\Theme.cs" />
+    <Compile Include="Data\Enums\AnimationControls.cs" />
+    <Compile Include="Data\Enums\SoundControls.cs" />
     <Compile Include="Dialogs\AGColorDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +152,7 @@
       <DependentUpon>AGForm2.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IAGControlAction.cs" />
+    <Compile Include="Interfaces\IAGControlAnimation.cs" />
     <Compile Include="Interfaces\IAGControlBorder.cs" />
     <Compile Include="Interfaces\IAGControlSound.cs" />
     <Compile Include="Interfaces\IAGControlTheme.cs" />
@@ -223,7 +227,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sounds\AGButton\Click_Sound1.wav" />
+    <EmbeddedResource Include="Sounds\AGButton\ASound_Click.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

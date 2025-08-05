@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgrineUI.Interfaces
+namespace AgrineUI.Data.Enums
 {
-    public interface IAGControlSound
+    public class SoundControls
     {
-        bool Sound { get; set; }
+        public enum SoundType {Default}
     }
 }
