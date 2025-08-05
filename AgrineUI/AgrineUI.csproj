@@ -180,6 +180,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Data\" />
     <Folder Include="Fonts\Letters\" />
     <Folder Include="Fonts\Symbol\" />
     <Folder Include="Forms\Advanced\" />
