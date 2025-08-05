@@ -1,14 +1,18 @@
-﻿using System;
+﻿using AgrineUI.Controls.Advanced;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace AgrineUI.Controls.Partial
 {
     [ToolboxItem(true)]
-    public class AGFormControl : AgrineUI.Controls.Advanced.AGUserControl
+    public class AGFormControl : AGUserControl
     {
         private Foundation.AGButton agButton1;
         private Foundation.AGButton agButton2;
@@ -17,6 +21,28 @@ namespace AgrineUI.Controls.Partial
         public AGFormControl()
         {
             this.InitializeComponent();
+        }
+
+        public int BorderSize { get; private set; } = 3;
+        public Color Palette { get; private set; } = Color.Tomato;
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
+            using (GraphicsPath GraphPath = AgrineUI.Practical.Graphics.AGRadius.GetRoundPath(Rect, 10,10,0,0))
+            {
+                this.Region = new Region(GraphPath);
+                if (this.BorderSize > 0)
+                {
+                    using (Pen pen = new Pen(this.Palette, this.BorderSize))
+                    {
+                        pen.Alignment = PenAlignment.Inset;
+                        e.Graphics.DrawPath(pen, GraphPath);
+                    }
+                }
+
+            }
         }
 
         private void InitializeComponent()
@@ -97,6 +123,10 @@ namespace AgrineUI.Controls.Partial
             this.Controls.Add(this.agButton3);
             this.Controls.Add(this.agButton2);
             this.Controls.Add(this.agButton1);
+            this.CustomRadius.BottomLeft = ((byte)(0));
+            this.CustomRadius.BottomRight = ((byte)(0));
+            this.CustomRadius.TopLeft = ((byte)(0));
+            this.CustomRadius.TopRight = ((byte)(0));
             this.DarkMode = true;
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "AGFormControl";
