@@ -2,6 +2,9 @@
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
+using System.Media;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace AgrineUI.Controls.Foundation
@@ -20,11 +23,14 @@ namespace AgrineUI.Controls.Foundation
             hoverTimer = new Timer();
             hoverTimer.Interval = 30;
             hoverTimer.Tick += HoverTimer_Tick;
+            this.soundPlayer = new SoundPlayer(AgrineUI.Data.Constants.Sound.Buttons.ASoundClick);
+
         }
 
         private bool defaultButton = false;
         private bool darkMode = false;
         private Color palette = Color.Tomato;
+        private SoundPlayer soundPlayer;
 
         [Category("Border")]
         public byte BorderSize { get; set; } = 2;
@@ -88,9 +94,13 @@ namespace AgrineUI.Controls.Foundation
         private Timer hoverTimer;
         private float hoverOpacity = 0f;
         private bool hovering = false;
-        private const float MaxHoverOpacity = 0.2f; 
+        private const float MaxHoverOpacity = 0.2f;
 
-
+        protected override void OnClick(EventArgs e)
+        {
+            base.OnClick(e);
+            this.soundPlayer.Play();
+        }
         protected override void OnMouseDown(MouseEventArgs e)
         {
             base.OnMouseDown(e);
@@ -226,7 +236,7 @@ namespace AgrineUI.Controls.Foundation
                     this.ForeColor = Color.Black;
                 }
             }
-            this.FlatAppearance.MouseDownBackColor = Color.FromArgb(220,this.BackColor);
+            this.FlatAppearance.MouseDownBackColor = Color.FromArgb(220, this.BackColor);
         }
 
 

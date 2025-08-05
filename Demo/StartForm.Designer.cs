@@ -30,6 +30,7 @@
         {
             this.agCircleButton1 = new AgrineUI.Controls.Advanced.AGCircleButton();
             this.agCircleButton2 = new AgrineUI.Controls.Advanced.AGCircleButton();
+            this.agButton1 = new AgrineUI.Controls.Foundation.AGButton();
             this.SuspendLayout();
             // 
             // agCircleButton1
@@ -74,10 +75,32 @@
             this.agCircleButton2.Text = "x";
             this.agCircleButton2.UseVisualStyleBackColor = false;
             // 
+            // agButton1
+            // 
+            this.agButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.agButton1.BorderRadius = ((byte)(20));
+            this.agButton1.BorderSize = ((byte)(2));
+            this.agButton1.DarkMode = true;
+            this.agButton1.DefaultButton = false;
+            this.agButton1.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.agButton1.FlatAppearance.BorderSize = 0;
+            this.agButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.agButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.agButton1.ForeColor = System.Drawing.Color.White;
+            this.agButton1.Location = new System.Drawing.Point(511, 56);
+            this.agButton1.Name = "agButton1";
+            this.agButton1.Palette = System.Drawing.Color.Tomato;
+            this.agButton1.Size = new System.Drawing.Size(195, 94);
+            this.agButton1.TabIndex = 2;
+            this.agButton1.Text = "agButton1";
+            this.agButton1.UseVisualStyleBackColor = false;
+            // 
             // StartForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(933, 516);
+            this.Controls.Add(this.agButton1);
             this.Controls.Add(this.agCircleButton2);
             this.Controls.Add(this.agCircleButton1);
             this.Name = "StartForm";
@@ -90,5 +113,6 @@
 
         private AgrineUI.Controls.Advanced.AGCircleButton agCircleButton1;
         private AgrineUI.Controls.Advanced.AGCircleButton agCircleButton2;
+        private AgrineUI.Controls.Foundation.AGButton agButton1;
     }
 }
