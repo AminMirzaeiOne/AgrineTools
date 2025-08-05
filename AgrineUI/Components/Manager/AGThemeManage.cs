@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AgrineUI.Components
+namespace AgrineUI.Components.Manager
 {
     public partial class AGThemeManage : Component
     {

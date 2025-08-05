@@ -79,10 +79,22 @@
     <Compile Include="Components\AGAnimator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Components\AGThemeManage.cs">
+    <Compile Include="Components\Manager\AGAnimationManage.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Components\AGThemeManage.Designer.cs">
+    <Compile Include="Components\Manager\AGAnimationManage.Designer.cs">
+      <DependentUpon>AGAnimationManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Manager\AGSoundManage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Manager\AGSoundManage.Designer.cs">
+      <DependentUpon>AGSoundManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Manager\AGThemeManage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\Manager\AGThemeManage.Designer.cs">
       <DependentUpon>AGThemeManage.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Advanced\AGCircleButton.cs">

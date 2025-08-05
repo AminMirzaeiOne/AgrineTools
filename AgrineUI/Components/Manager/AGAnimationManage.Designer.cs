@@ -1,6 +1,6 @@
-﻿namespace AgrineUI.Components
+﻿namespace AgrineUI.Components.Manager
 {
-    partial class AGThemeManage
+    partial class AGAnimationManage
     {
         /// <summary>
         /// Required designer variable.

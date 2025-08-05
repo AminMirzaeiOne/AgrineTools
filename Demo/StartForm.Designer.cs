@@ -30,6 +30,7 @@
         {
             this.agButton1 = new AgrineUI.Controls.Foundation.AGButton();
             this.agCircleButton1 = new AgrineUI.Controls.Advanced.AGCircleButton();
+            this.agButton2 = new AgrineUI.Controls.Foundation.AGButton();
             this.SuspendLayout();
             // 
             // agButton1
@@ -59,7 +60,7 @@
             // agCircleButton1
             // 
             this.agCircleButton1.Animation = true;
-            this.agCircleButton1.AnimationSpeed = AgrineUI.Data.Enums.AnimationControls.AnimationSpeedOptions.Medium;
+            this.agCircleButton1.AnimationSpeed = AgrineUI.Data.Enums.AnimationControls.AnimationSpeedOptions.VeryQuick;
             this.agCircleButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.agCircleButton1.BorderSize = ((byte)(5));
             this.agCircleButton1.DarkMode = true;
@@ -79,11 +80,36 @@
             this.agCircleButton1.Text = "sd";
             this.agCircleButton1.UseVisualStyleBackColor = false;
             // 
+            // agButton2
+            // 
+            this.agButton2.Animation = true;
+            this.agButton2.AnimationSpeed = AgrineUI.Data.Enums.AnimationControls.AnimationSpeedOptions.VeryQuick;
+            this.agButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.agButton2.BorderRadius = ((byte)(30));
+            this.agButton2.BorderSize = ((byte)(4));
+            this.agButton2.DarkMode = true;
+            this.agButton2.DefaultButton = false;
+            this.agButton2.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.agButton2.FlatAppearance.BorderSize = 0;
+            this.agButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.agButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F);
+            this.agButton2.ForeColor = System.Drawing.Color.White;
+            this.agButton2.Location = new System.Drawing.Point(316, 318);
+            this.agButton2.Name = "agButton2";
+            this.agButton2.Palette = System.Drawing.Color.Tomato;
+            this.agButton2.Size = new System.Drawing.Size(289, 129);
+            this.agButton2.Sound = false;
+            this.agButton2.TabIndex = 0;
+            this.agButton2.Text = "agButton1";
+            this.agButton2.UseVisualStyleBackColor = false;
+            // 
             // StartForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(933, 516);
             this.Controls.Add(this.agCircleButton1);
+            this.Controls.Add(this.agButton2);
             this.Controls.Add(this.agButton1);
             this.Name = "StartForm";
             this.Text = "StartForm";
@@ -95,5 +121,6 @@
 
         private AgrineUI.Controls.Foundation.AGButton agButton1;
         private AgrineUI.Controls.Advanced.AGCircleButton agCircleButton1;
+        private AgrineUI.Controls.Foundation.AGButton agButton2;
     }
 }
