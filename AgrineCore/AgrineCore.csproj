@@ -48,6 +48,7 @@
     <Compile Include="OS\Info.cs" />
     <Compile Include="OS\Netwrok.cs" />
     <Compile Include="OS\Apps.cs" />
+    <Compile Include="OS\Theme.cs" />
     <Compile Include="Practical\CMD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
