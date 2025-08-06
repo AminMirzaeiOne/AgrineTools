@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgrineSubset", "AgrineSubse
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{88DD7AB7-E1E9-4A80-A4EC-4B0B84D9DB0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgrineCore", "AgrineCore\AgrineCore.csproj", "{6ADD892E-E687-4AD4-9342-A2B76B705E54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{88DD7AB7-E1E9-4A80-A4EC-4B0B84D9DB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88DD7AB7-E1E9-4A80-A4EC-4B0B84D9DB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88DD7AB7-E1E9-4A80-A4EC-4B0B84D9DB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADD892E-E687-4AD4-9342-A2B76B705E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADD892E-E687-4AD4-9342-A2B76B705E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADD892E-E687-4AD4-9342-A2B76B705E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADD892E-E687-4AD4-9342-A2B76B705E54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
