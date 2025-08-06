@@ -22,7 +22,7 @@ namespace AgrineCore.OS
 
         public static void OpenBluetoothSettings()
         {
-            Process.Start(new ProcessStartInfo
+            Runtime.Start(new ProcessStartInfo
             {
                 FileName = "ms-settings:bluetooth",
                 UseShellExecute = true

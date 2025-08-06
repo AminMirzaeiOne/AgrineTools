@@ -15,7 +15,6 @@ namespace AgrineCore.OS
 
         public static string GetOSVersion()
         {
-            // اگر RuntimeInformation را ندارید، این روش جایگزین است:
             return Environment.OSVersion.VersionString;
         }
 
@@ -36,7 +35,6 @@ namespace AgrineCore.OS
 
         public static string GetProcessorArchitecture()
         {
-            // ساده ترین روش:
             return Environment.Is64BitOperatingSystem ? "x64" : "x86";
         }
 

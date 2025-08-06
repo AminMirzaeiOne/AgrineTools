@@ -102,7 +102,7 @@ namespace AgrineCore.OS
 
         public static void OpenNetworkSettings()
         {
-            Process.Start(new ProcessStartInfo
+            Runtime.Start(new ProcessStartInfo
             {
                 FileName = "ms-settings:network",
                 UseShellExecute = true
