@@ -87,6 +87,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AgrineCore\AgrineCore.csproj">
+      <Project>{6add892e-e687-4ad4-9342-a2b76b705e54}</Project>
+      <Name>AgrineCore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AgrineUI\AgrineUI.csproj">
       <Project>{faaf105a-4ceb-4f98-9bd8-23cc69e62e89}</Project>
       <Name>AgrineUI</Name>
