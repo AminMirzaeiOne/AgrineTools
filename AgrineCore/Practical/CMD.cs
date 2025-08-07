@@ -107,6 +107,49 @@ namespace AgrineCore.Practical
         }
 
         /// <summary>
+        /// Executes a PowerShell command and returns output, error, and exit code (synchronously)
+        /// </summary>
+        public static CmdResult RunPowerShell(string command, int timeoutMs = 10000, string workingDirectory = null)
+        {
+            var outputBuilder = new StringBuilder();
+            var errorBuilder = new StringBuilder();
+
+            using (Process process = new Process())
+            {
+                process.StartInfo.FileName = "powershell.exe";
+                process.StartInfo.Arguments = "-NoProfile -ExecutionPolicy Bypass -Command \"" + command + "\"";
+                process.StartInfo.CreateNoWindow = true;
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.RedirectStandardOutput = true;
+                process.StartInfo.RedirectStandardError = true;
+                process.StartInfo.StandardOutputEncoding = Encoding.UTF8;
+                process.StartInfo.StandardErrorEncoding = Encoding.UTF8;
+
+                if (!string.IsNullOrEmpty(workingDirectory))
+                    process.StartInfo.WorkingDirectory = workingDirectory;
+
+                process.OutputDataReceived += (s, e) => { if (e.Data != null) outputBuilder.AppendLine(e.Data); };
+                process.ErrorDataReceived += (s, e) => { if (e.Data != null) errorBuilder.AppendLine(e.Data); };
+
+                process.Start();
+                process.BeginOutputReadLine();
+                process.BeginErrorReadLine();
+
+                bool exited = process.WaitForExit(timeoutMs);
+                if (!exited)
+                    process.Kill();
+
+                return new CmdResult
+                {
+                    Output = outputBuilder.ToString().Trim(),
+                    Error = errorBuilder.ToString().Trim(),
+                    ExitCode = process.ExitCode
+                };
+            }
+        }
+
+
+        /// <summary>
         /// Executes a CMD command silently without capturing output or waiting
         /// </summary>
         public static void RunSilent(string command, bool runAsAdmin = false)
