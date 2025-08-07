@@ -62,6 +62,7 @@
     <Compile Include="OS\Power.cs" />
     <Compile Include="OS\ServiceManager.cs" />
     <Compile Include="OS\Theme.cs" />
+    <Compile Include="OS\Window.cs" />
     <Compile Include="Practical\CMD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
