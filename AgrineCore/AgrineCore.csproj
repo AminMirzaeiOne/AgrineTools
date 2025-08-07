@@ -46,6 +46,7 @@
     <Compile Include="Base\StartProgram.cs" />
     <Compile Include="OS\Bluetooth.cs" />
     <Compile Include="OS\FileManager.cs" />
+    <Compile Include="OS\FolderManager.cs" />
     <Compile Include="OS\Info.cs" />
     <Compile Include="OS\Netwrok.cs" />
     <Compile Include="OS\Apps.cs" />
