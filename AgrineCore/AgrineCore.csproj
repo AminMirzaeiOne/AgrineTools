@@ -52,6 +52,7 @@
     <Compile Include="OS\Bluetooth.cs" />
     <Compile Include="OS\ClipboardManager.cs" />
     <Compile Include="OS\Display.cs" />
+    <Compile Include="OS\EventLogManager.cs" />
     <Compile Include="OS\FileManager.cs" />
     <Compile Include="OS\FolderManager.cs" />
     <Compile Include="OS\Info.cs" />
