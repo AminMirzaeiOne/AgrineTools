@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\StartProgram.cs" />
+    <Compile Include="OS\Account.cs" />
     <Compile Include="OS\Audio.cs" />
     <Compile Include="OS\Bluetooth.cs" />
     <Compile Include="OS\FileManager.cs" />
