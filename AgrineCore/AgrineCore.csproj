@@ -48,6 +48,7 @@
     <Compile Include="OS\Account.cs" />
     <Compile Include="OS\Audio.cs" />
     <Compile Include="OS\Bluetooth.cs" />
+    <Compile Include="OS\Clipboard.cs" />
     <Compile Include="OS\FileManager.cs" />
     <Compile Include="OS\FolderManager.cs" />
     <Compile Include="OS\Info.cs" />
