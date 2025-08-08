@@ -65,10 +65,10 @@
     <Compile Include="OS\Window.cs" />
     <Compile Include="Practical\CMD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\HashingManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Actions\" />
-    <Folder Include="Security\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
