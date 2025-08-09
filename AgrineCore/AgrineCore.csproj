@@ -65,6 +65,7 @@
     <Compile Include="OS\Window.cs" />
     <Compile Include="Practical\CMD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\CertificateManager.cs" />
     <Compile Include="Security\EncryptionManager.cs" />
     <Compile Include="Security\HashingManager.cs" />
   </ItemGroup>
