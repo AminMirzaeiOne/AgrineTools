@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace AgrineCore.Practical
+namespace AgrineCore.Converter
 {
     public static class AudioConverter
     {
