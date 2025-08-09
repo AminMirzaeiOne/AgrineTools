@@ -67,7 +67,7 @@
     <Compile Include="OS\Theme.cs" />
     <Compile Include="OS\Window.cs" />
     <Compile Include="Practical\CMD.cs" />
-    <Compile Include="Practical\ImageConverter.cs" />
+    <Compile Include="Converter\ImageConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\EncryptionManager.cs" />
     <Compile Include="Security\FileEncryptionManager.cs" />
@@ -75,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Actions\" />
-    <Folder Include="Converter\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
