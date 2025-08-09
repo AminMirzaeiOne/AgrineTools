@@ -71,6 +71,7 @@
     <Compile Include="Practical\CMD.cs" />
     <Compile Include="Converter\ImageConverter.cs" />
     <Compile Include="Practical\TextUtilities.cs" />
+    <Compile Include="Practical\ZipManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\EncryptionManager.cs" />
     <Compile Include="Security\FileEncryptionManager.cs" />
