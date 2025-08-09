@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\StartProgram.cs" />
+    <Compile Include="Converter\AudioConverter.cs" />
     <Compile Include="Deploy\InstallerManager.cs" />
     <Compile Include="Deploy\UpdateManager.cs" />
     <Compile Include="Deploy\VersionInfo.cs" />
