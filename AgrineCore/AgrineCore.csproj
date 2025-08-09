@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\StartProgram.cs" />
+    <Compile Include="Deploy\UpdateManager.cs" />
     <Compile Include="OS\Account.cs" />
     <Compile Include="OS\Audio.cs" />
     <Compile Include="OS\Bluetooth.cs" />
@@ -71,7 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Actions\" />
-    <Folder Include="Deploy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
