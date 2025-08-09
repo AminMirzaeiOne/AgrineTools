@@ -47,9 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actions\Definitions.cs" />
-    <Compile Include="Actions\Executor.cs" />
-    <Compile Include="Actions\Metadata.cs" />
+    <Compile Include="Actions\AppsDefinitions.cs" />
     <Compile Include="Base\StartProgram.cs" />
     <Compile Include="Converter\AudioConverter.cs" />
     <Compile Include="Converter\VideoConverter.cs" />
