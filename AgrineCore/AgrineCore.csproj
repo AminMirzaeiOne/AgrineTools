@@ -49,6 +49,7 @@
     <Compile Include="Base\StartProgram.cs" />
     <Compile Include="Deploy\InstallerManager.cs" />
     <Compile Include="Deploy\UpdateManager.cs" />
+    <Compile Include="Deploy\VersionInfo.cs" />
     <Compile Include="OS\Account.cs" />
     <Compile Include="OS\Audio.cs" />
     <Compile Include="OS\Bluetooth.cs" />
