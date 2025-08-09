@@ -72,6 +72,7 @@
     <Compile Include="OS\Window.cs" />
     <Compile Include="Practical\CMD.cs" />
     <Compile Include="Converter\ImageConverter.cs" />
+    <Compile Include="Practical\Logger.cs" />
     <Compile Include="Practical\TextUtilities.cs" />
     <Compile Include="Practical\ZipManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
