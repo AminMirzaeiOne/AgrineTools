@@ -67,6 +67,7 @@
     <Compile Include="OS\Theme.cs" />
     <Compile Include="OS\Window.cs" />
     <Compile Include="Practical\CMD.cs" />
+    <Compile Include="Practical\ImageConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\EncryptionManager.cs" />
     <Compile Include="Security\FileEncryptionManager.cs" />
