@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Actions\" />
+    <Folder Include="Deploy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
